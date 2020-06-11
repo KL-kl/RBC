@@ -1,0 +1,425 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}首页{% endblock %}</title>
+
+    <script type="text/javascript" src="{% static 'js/jQuery/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jQuery/jquery.datatables.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap-table.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap-table-zh-CN.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap-table-fixed-columns.js' %}"></script>
+    {#    <script src="{% static 'js/bootstrap-table-locale-all.min.js' %}"></script>#}
+    <script src="{% static 'js/bootstrap/bootstrap-table-export.min.js' %}"></script>
+    <script src="{% static 'js/jQuery/tableExport.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap-editable.min.js' %}"></script>
+    <script src="{% static 'js/nav.js' %}"></script>
+
+    <link REL="SHORTCUT ICON" HREF="{% static "images/favicon.ico" %}"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-change.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/iconfont.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery/jquery.datatables.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap/font-awesome.min.css' %}">
+    <link href="{% static 'css/bootstrap/bootstrap-table.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap/bootstrap-table-fixed-columns.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap/bootstrap-editable.css' %}" rel="stylesheet">
+
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            width: 100%;
+            height: 100px;
+            background: midnightblue;
+            padding: 15px 30px 0 300px;
+        }
+
+        .floatL {
+            float: left;
+            display: block;
+        }
+
+        .floatR {
+            display: block;
+            margin-left: 15px;
+        }
+
+        .te1 {
+            color: #d9edf7;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 7px;
+        }
+
+        .te2 {
+            color: #d9edf7;
+            padding-left: 20px;
+            font-size: 18px;
+            letter-spacing: 0;
+            margin-top: 6px;
+        }
+
+        .te3 {
+            float: left;
+            margin-top: 30px;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            height: 30px;
+            border-radius: 7px;
+            outline: none;
+            border: 1px solid grey;
+            padding: 0 7px;
+        }
+
+        input[type='radio'] {
+            margin: 0 10px;
+        }
+
+        input[type='submit'] {
+            width: 80px;
+            height: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .left-menu {
+            width: 220px;
+            height: 100%;
+            background: #263238;
+            transition: all .3s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .left-menu a {
+
+            display: block;
+            overflow: hidden;
+            padding-left: 20px;
+            line-height: 46px;
+            max-height: 46px;
+            color: #ABB1B7;
+            transition: all .3s;
+        }
+
+        .left-menu a span {
+            margin-left: 30px;
+        }
+
+        .left-menu-item {
+            position: relative;
+        }
+
+        .left-menu-item.left-menu-show {
+            border-bottom: none;
+        }
+
+        .left-menu-item ul {
+            display: none;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        .left-menu-item.left-menu-show ul {
+            display: block;
+        }
+
+        .left-menu-item > a:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 2px;
+            height: 46px;
+            background: #34A0CE;
+            opacity: 0;
+            transition: all .3s;
+        }
+
+        .left-menu .left-menu-icon {
+            font-size: 20px;
+            position: absolute;
+            margin-left: -1px;
+        }
+
+        /* 此处修改导航图标 可自定义iconfont 替换*/
+        .icon_1::after {
+            content: "\e62b";
+        }
+
+        .icon_2::after {
+            content: "\e669";
+        }
+
+        .icon_3::after {
+            content: "\e61d";
+        }
+
+        /*---------------------*/
+        .left-menu-more {
+            float: right;
+            margin-right: 20px;
+            font-size: 12px;
+            transition: transform .3s;
+        }
+
+        /* 此处为导航右侧箭头 如果自定义iconfont 也需要替换*/
+        .left-menu-more::after {
+            content: "\e621";
+        }
+
+        .left-menu-show .left-menu-more {
+            transform: rotate(90deg);
+        }
+
+        .left-menu-show, .left-menu-item > a:hover {
+            color: #FFF;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        .left-menu-show > a:before, .left-menu-item > a:hover:before {
+            opacity: 1;
+        }
+
+        .left-menu-item li:hover a {
+            color: #FFF;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        /* left-menu-mini */
+        .left-menu-mini.left-menu {
+            width: 60px;
+        }
+
+        .left-menu-mini.left-menu .left-menu-icon { /* margin-left:-2px; */
+        }
+
+        .left-menu-mini.left-menu .left-menu-item > a span {
+            display: none;
+        }
+
+        .left-menu-mini.left-menu .left-menu-more {
+            margin-right: -20px;
+        }
+
+        .left-menu-mini.left-menu .left-menu-item ul {
+            position: absolute;
+            top: 0;
+            left: 60px;
+            width: 180px;
+            z-index: 99;
+            background: #3C474C;
+            overflow: hidden;
+        }
+
+        .left-menu-mini.left-menu .left-menu-item:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+
+        .left-menu-mini.left-menu .left-menu-item:hover .left-menu-item a {
+            color: #FFF;
+        }
+
+        .left-menu-mini.left-menu .left-menu-item:hover a:before {
+            opacity: 1;
+        }
+
+        .left-menu-mini.left-menu .left-menu-item:hover ul {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        .no li {
+            padding-top: 10px;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+
+        .login_info {
+            margin-top: 12px;
+            float: right;
+            margin-right: 50px;
+
+        }
+    </style>
+    {% block css %}
+
+    {% endblock %}
+
+
+</head>
+<body>
+
+<div class="head">
+    {#    <div class="floatL">#}
+    {#        <div class="te1"></div>#}
+    {#        <div class="te2"></div>#}
+    {#    </div>#}
+    <div class="floatR">
+        <div class="te3"> IP承载网中继路由仿真工具--<span class="te4">项目工作平台</span></div>
+        <div class="login_info">
+            {% if request.user.is_authenticated %}
+                <div class="login_btn fl">
+                    <p style="color: white">欢迎您：{{ request.user.username }}</p>
+                    <span style="color: white">|</span>
+                    <a href="{% url 'user:user_logout' %}">退出</a>
+                </div>
+            {% else %}
+                <div class="login_btn fl">
+                    <a href="{% url 'user:user_login' %}">登录</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-2">
+            <div class="left-menu">
+                <div class="left-menu-top">
+                    <div id="mini" style="border-bottom:1px solid rgba(255,255,255,.1)"><img
+                            src="{% static 'images/mini.png' %}"></div>
+                </div>
+                <ul>
+                    <li class="left-menu-item">
+                        <a href="javascript:void(0)"><i
+                                class="my-icon left-menu-icon icon_1"></i><span>中继仿真模型</span><i
+                                class="my-icon left-menu-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="myLeftMenu"
+                                   data="{% url 'IPwinUpload:IPwin' %}"><span>IP网</span></a>
+                            </li>
+                            <li><a href="javascript:void(0)" class="myLeftMenu"
+                                   data="{% url 'CMNETwinUpload:CMNETwin' %}"><span>CMNET网</span></a></li>
+                            <li><a href="javascript:void(0)" class="myLeftMenu"
+                                   data="{% url 'CMNETwinUpload:show_progress1' %}"><span>测试用</span></a></li>
+                            <li><a href="javascript:void(0)" class="myLeftMenu"
+                                   data="{% url 'CMNETwinUpload:show_progress2' %}"><span>测试用</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="left-menu-item">
+                        <a href="javascript:void(0)"><i
+                                class="my-icon left-menu-icon icon_2"></i><span>中继电路计算</span><i
+                                class="my-icon left-menu-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="myLeftMenu"
+                                   data="{% url 'IPwinUpload:IPwin_2' %}"><span>IP网</span></a></li>
+                            <li><a href="javascript:void(0)" class="myLeftMenu"
+                                   data="{% url 'CMNETwinUpload:CMNETwin_2' %}"><span>CMNET网</span></a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-md-10" id="content">
+            {% block content %}
+                <div class="div_right">
+                    <h1>
+                        <small>&nbsp;&nbsp;&nbsp;中继路由仿真计算平台</small>
+                        <hr>
+                    </h1>
+
+                    <h4 style="padding-left: 30px">
+                        <strong>使用指南：</strong><br>
+                        <ul class="no">
+                            <li>1.可以在本页点击需要下载需要的metric表模板</li>
+                            <li>2.在左侧菜单栏中的中继仿真模型下拉菜单中选择模型，填写并上传需求Excel表等</li>
+                            <li>3.检查需求是否完整，完整之后提交</li>
+                            <li>4.如需导出结果表，请在左侧菜单中的导出菜单中输入自定义导出表的名称，点击导出；导出表是通过浏览器下载的</li>
+                            <li>提示：因为需要计算，请耐心等待结果</li>
+                        </ul>
+
+                    </h4>
+                    <hr>
+
+                    <div id="models" style="margin-top:20px;padding-left: 20px">
+                        <h4>模板下载</h4>
+                        <div style="padding-left: 20px" id="ip_model">
+                            <h4>IP专网模板:</h4>
+                            <form enctype="multipart/form-data" action="{% url 'downloadModel:downloadTest1' %}"
+                                  method="post">
+                                {% csrf_token %}
+                                <label>metric:</label>
+                                <input type="text" name="filename" placeholder="请输入自定义文件名" value="">
+                                <input type="submit" value="点击下载"/>
+                            </form>
+                            <form enctype="multipart/form-data" action="{% url 'downloadModel:downloadTest2' %}"
+                                  method="post">
+                                {% csrf_token %}
+                                <label>传输距离:</label>
+                                <input type="text" name="filename" placeholder="请输入自定义文件名" value="">
+                                <input type="submit" value="点击下载"/>
+                            </form>
+                        </div>
+                        <div style="padding-left: 20px" id="ip_model">
+                            <h4>CMNET网模板:</h4>
+                            <form enctype="multipart/form-data" action="{% url 'downloadModel:downloadTest3' %}"
+                                  method="post">
+                                {% csrf_token %}
+                                <label>metric:</label>
+                                <input type="text" name="filename" placeholder="请输入自定义文件名" value="">
+                                <input type="submit" value="点击下载"/>
+                            </form>
+                            <form enctype="multipart/form-data" action="{% url 'downloadModel:downloadTest4' %}"
+                                  method="post">
+                                {% csrf_token %}
+                                <label>传输距离:</label>
+                                <input type="text" name="filename" placeholder="请输入自定义文件名" value="">
+                                <input type="submit" value="点击下载"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+        options.async = true;
+    });
+    $(function () {
+        $('.myLeftMenu').click(function (e) {
+
+            var url = $(this).attr('data');
+            //  console.log(url);
+            $('#content').load(url);
+        });
+    });
+
+
+</script>
+{% block myjs %}
+{% endblock %}
+
+</body>
+</html>

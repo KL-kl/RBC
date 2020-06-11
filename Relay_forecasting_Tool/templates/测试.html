@@ -1,0 +1,487 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Columns</title>
+    <meta charset="utf-8">
+
+
+    <style>
+/*
+        #table {
+            overflow: scroll;
+            min-width: 1500px;
+        }*/
+    </style>
+</head>
+<body>
+
+<div class="bottomScroll">
+    <div id="toolbar">
+        <form class="form-inline">
+            <button type="button" class="btn btn-primary glyphicon glyphicon-plus">添加
+            </button>
+            <button type="button" class="btn btn-primary glyphicon glyphicon-upload">
+                上传           
+            </button>
+            <button type="button" class="btn btn-primary glyphicon glyphicon-refresh" onclick="refreshTable()">刷新         
+            </button>
+
+        </form>
+    </div>
+
+    <table id="table"></table>
+</div>
+
+{% comment %}
+data-toolbar="#toolbar"
+           data-search="true"
+           data-show-refresh="true"
+           data-show-toggle="true"
+           data-show-fullscreen="true"
+           data-show-columns="true"
+           data-show-columns-toggle-all="true"
+           data-detail-view="true"
+           data-show-export="true"
+           data-click-to-select="true"
+           data-detail-formatter="detailFormatter"
+           data-minimum-count-columns="2"
+           data-mobile-responsive="true"
+           data-show-pagination-switch="true"
+           data-pagination="true"
+           data-id-field="id"
+           data-show-footer="true"
+           data-side-pagination="server"
+           data-url=""
+           data-response-handler="responseHandler"
+{% endcomment %}
+
+<script>
+    var $table = $('#table');
+
+
+    function getIdSelections() {
+        return $.map($table.bootstrapTable('getSelections'), function (row) {
+            return row.id
+        })
+    }
+
+    function responseHandler(res) {
+        $.each(res.rows, function (i, row) {
+            row.state = $.inArray(row.id, selections) !== -1
+        });
+        return res
+    }
+
+    function detailFormatter(index, row) {
+        var html = [];
+        $.each(row, function (key, value) {
+            html.push('<p><b>' + key + ':</b> ' + value + '</p>')
+        });
+        return html.join('')
+    }
+
+    /**
+     * 表格中字段内容过长时采用缩略方式
+     */
+    function contentFormatter(value, row, index) {
+        var content = value;
+        if (value && value.length > 10) {
+            content = value.substr(0, 10) + "..."
+        }
+        return "<span data-toggle='tooltip' data-html='true'  data-placement=\"top\" title=\"" + value + "\">" + content + "</span>";
+    }
+
+    /**
+     * 操作列
+     * @param value 传入的数据
+     * @param row 当前行
+     * @param index 当前列数
+     * @returns {string} 返回渲染数据
+     */
+    function operationTable(value, row, index) {
+        return "<button class=\"btn btn-warning\" onclick=\"update('" + value + "')\"> 修改 </button>" +
+            "&nbsp;&nbsp;" +
+            "<button class=\"btn btn-danger\" onclick=\"delete('" + value + "')\"> 删除 </button>";
+    }
+
+    function setScroll() {
+        //var height = parseInt($(window).height()) + "px";
+        //var width = parseInt($(window).width()) + "px";
+        var h = $(window).height() - 100;
+        var w = $(window).width() - 150;
+
+        $(".bottomScroll").css({
+            "height": h + 'px',
+            "width": w + 'px',
+            'overflow-y': 'scroll',
+            'overflow-x': 'scroll',
+            'display': 'inline-grid'
+        });
+    }
+
+    $table.bootstrapTable({
+        ajax: function (request) {
+            $.ajax({
+                type: "GET",
+                url: "{% url 'CMNETwinUpload:show_node' %}",
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                json: 'callback',
+                success: function (json) {
+                    setScroll();
+
+                    var dynamicHeader = [];
+                    dynamicHeader.push({
+                        field: "state",
+                        check: true
+                    });
+
+                    for (var i = 0; i < (Object.keys(json[0])).length; i++) {
+                        var property = (Object.keys(json[0]))[i];
+                        //console.log(property);
+                        dynamicHeader.push({
+                            "title": property,
+                            "field": property,
+                            switchable: true,
+                            sortable: true
+                        });
+                    }
+
+                    //console.log(Object.keys(json[0]));
+                    $table.bootstrapTable('destroy').bootstrapTable({
+                        data: json,
+                        toolbar: '#toolbar',
+                        {#height: 600,#}
+                        clickEdit: true,
+                        cache: false,
+                        striped: true, //是否显示行间隔色(斑马线)
+                        sidePagination: "client",
+                        sortOrder: "desc",
+                        pageSize: 10,
+                        pageNumber: 1,
+                        pageList: "[25, 50, 100, All]",
+                        showToggle: true, //是否显示详细视图和列表视图的切换按钮
+                        showRefresh: false,                  //是否显示刷新按钮
+                        showColumns: true,
+                        showExport: true,
+                        exportDataType: "all", //导出
+                        exportTypes: ['excel'],
+                        exportOptions: {
+                            {#ignoreColumn: [0, 1],  //忽略某一列的索引#}
+                            fileName: 'CMNet网工程节点信息表',  //文件名称设置
+                            worksheetName: '骨干局址设备信息',  //表格工作区名称
+                            tableName: '节点信息报表',
+                            excelstyles: ['background-color', 'color', 'font-size', 'font-weight']
+                        },
+                        pagination: true,
+                        strictSearch: true,
+                        search: true,
+                        columns: [
+                            [
+                                /*{
+                                field: 'state',
+                                checkbox: true,
+                                rowspan: 3,
+                                align: 'center',
+                                valign: 'middle'
+                            }, */
+                                {
+                                    title: '序号',
+                                    field: 'id',
+                                    rowspan: 3,
+                                    align: 'center',
+                                    valign: 'middle',
+                                    sortable: true,
+
+                                }, {
+                                title: '省份',
+                                field: 'province',
+                                rowspan: 3,
+                                align: 'center',
+                                valign: 'middle',
+                                sortable: true,
+                            }, {
+                                title: '城市',
+                                field: 'city',
+                                rowspan: 3,
+                                align: 'center',
+                                valign: 'middle',
+                                sortable: true,
+                            }, {
+                                title: '现状',
+                                colspan: 12,
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                title: '建设方案',
+                                field: 'program',
+                                rowspan: 3,
+                                align: 'center',
+                                valign: 'middle',
+                                sortable: true,
+                            }, {
+                                title: '本期工程',
+                                colspan: 12,
+                                width: 120,
+                                align: 'center',
+                                valign: 'middle',
+                            }],
+                            [{
+                                title: '局址信息',
+                                align: 'center',
+                                valign: 'middle',
+                                colspan: 4,
+                                rowspan: 1
+                            }, {
+                                title: '网络层次信息',
+                                align: 'center',
+                                valign: 'middle',
+                                colspan: 4,
+                                rowsapn: 1
+                            }, {
+                                title: '设备信息',
+                                align: 'center',
+                                valign: 'middle',
+                                colspan: 4,
+                                rowsapn: 1
+                            }, {
+                                title: '局址信息',
+                                align: 'center',
+                                valign: 'middle',
+                                colspan: 4,
+                                rowspan: 1
+                            }, {
+                                title: '网络层次信息',
+                                align: 'center',
+                                valign: 'middle',
+                                colspan: 4,
+                                rowsapn: 1
+                            }, {
+                                title: '设备信息',
+                                align: 'center',
+                                valign: 'middle',
+                                colspan: 4,
+                                rowsapn: 1
+                            }],
+
+                            [{
+                                field: 'office_address1',
+                                title: '局址',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'building_no1',
+                                title: '楼号',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'floor1',
+                                title: '楼层',
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'room_num1',
+                                title: '机房编号',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'plane1',
+                                title: '流量平面',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'network_level1',
+                                title: '网络层次',
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'part1',
+                                title: '角色',
+                                sortable: true,
+
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'part_subdivide1',
+                                title: '角色-细分',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'devicename1',
+                                title: '设备名称',
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'device_comp1',
+                                title: '设备厂家',
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'unit_type1',
+                                title: '设备型号',
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'device_state1',
+                                title: '设备形态',
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'office_address2',
+                                title: '局址',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'building_no2',
+                                title: '楼号',
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'floor2',
+                                title: '楼层',
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'room_num2',
+                                title: '机房编号',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'plane2',
+                                title: '流量平面',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'network_level2',
+                                title: '网络层次',
+                                align: 'center',
+                                valign: 'middle',
+
+
+                            }, {
+                                field: 'part2',
+                                title: '角色',
+                                sortable: true,
+
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'part_subdivide2',
+                                title: '角色-细分',
+                                sortable: true,
+                                align: 'center',
+                                valign: 'middle',
+
+                            }, {
+                                field: 'devicename2',
+                                title: '设备名称',
+
+                                align: 'center',
+                                valign: 'middle',
+                            }, {
+                                field: 'device_comp2',
+                                title: '设备厂家',
+                                align: 'center',
+                                valign: 'middle',
+
+
+                            }, {
+                                field: 'unit_type2',
+                                title: '设备型号',
+                                align: 'center',
+                                valign: 'middle',
+
+
+                            }, {
+                                field: 'device_state2',
+                                title: '设备形态',
+                                align: 'center',
+                                valign: 'middle',
+
+
+                            }]
+                        ],
+                        onClickCell: function (field, value, row, $element) {
+
+                            $element.attr('contenteditable', true);
+
+                            $element.blur(function () {
+
+                                let index = $element.parent().data('index');
+
+                                let tdValue = $element.html();
+
+
+                                saveData(index, field, tdValue);
+
+                            })
+
+                        },
+                        /*
+                        onPostBody: function () {
+                            //重点就在这里，获取渲染后的数据列td的宽度赋值给对应头部的th,这样就表头和列就对齐了
+                            var header = $(".fixed-table-header table thead tr th");
+                            var body = $(".fixed-table-header table tbody tr td");
+                            var footer = $(".fixed-table-header table tr td");
+                            body.each(function () {
+                                header.width((this).width());
+                                footer.width((this).width());
+                            });
+                        }*/
+
+
+                    });
+                },
+                error: function () {
+                    alert("查询错误！");
+                    location.reload();
+                },
+
+
+            });
+        }
+    });
+
+    function refreshTable() {
+        $table.bootstrapTable("refresh");
+    }
+
+    //
+
+    function saveData(index, field, value) {
+
+        $table.bootstrapTable('updateCell', {
+
+            index: index,       //行索引
+
+            field: field,       //列名
+
+            value: value        //cell值
+
+        })
+
+    }
+
+
+</script>
+</body>
+</html>

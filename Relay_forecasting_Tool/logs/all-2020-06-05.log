@@ -1,0 +1,116 @@
+[2020-06-05 11:21:53,790] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 11:22:05,238] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 11:22:20,368] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2877, in relay_compare
+    prodic[p] += k
+KeyError: '北京'
+[2020-06-05 11:22:20,637] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18291
+[2020-06-05 11:24:36,504] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 11:24:39,455] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 11:25:17,327] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-05 11:27:32,544] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 11:27:40,676] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 11:27:59,513] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-05 11:49:50,192] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 11:49:57,110] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 11:50:03,884] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-05 11:50:15,648] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2630, in relay_compare
+    sh = book2.add_sheet('分省电路表', cell_overwrite_ok=True)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlwt\Workbook.py", line 371, in add_sheet
+    raise Exception("duplicate worksheet name %r" % sheetname)
+Exception: duplicate worksheet name '分省电路表'
+[2020-06-05 11:50:15,914] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18567
+[2020-06-05 13:30:12,888] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 13:30:23,180] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 13:30:41,134] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-05 14:20:33,749] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 14:20:36,606] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 14:20:42,842] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-05 14:20:53,559] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2467, in relay_compare
+    excel = open_exce(os.path.join(path, relayFile.name))  # 上期中继
+  File "D:\job\Relay_forecasting_Tool\apps\utils\hebin.py", line 31, in open_exce
+    fh = xlrd.open_workbook(name,formatting_info=True)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\__init__.py", line 138, in open_workbook
+    ragged_rows=ragged_rows,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\xlsx.py", line 798, in open_workbook_2007_xml
+    raise NotImplementedError("formatting_info=True not yet implemented")
+NotImplementedError: formatting_info=True not yet implemented
+[2020-06-05 14:20:53,598] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18875
+[2020-06-05 14:21:58,047] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 14:22:01,787] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 14:22:11,565] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-05 14:26:32,845] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 14:26:36,105] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 14:26:41,795] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-05 14:26:51,210] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-05 14:28:37,864] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 14:28:46,352] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 14:28:56,284] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-05 14:51:53,235] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 14:51:58,781] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 14:52:04,176] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-05 14:52:16,212] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-05 14:59:24,490] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 14:59:28,009] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-05 14:59:37,808] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-05 17:01:36,287] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 302 0
+[2020-06-05 17:01:36,324] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /user/user_login/?next=/ HTTP/1.1" 200 3343
+[2020-06-05 17:01:36,458] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loginsj.png HTTP/1.1" 200 3018
+[2020-06-05 17:01:36,459] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loginbg1.png HTTP/1.1" 200 2834
+[2020-06-05 17:01:36,461] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/light.png HTTP/1.1" 200 132156
+[2020-06-05 17:01:48,303] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /user/user_login/?next=/ HTTP/1.1" 302 0
+[2020-06-05 17:01:48,334] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 17:01:50,373] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 15512
+[2020-06-05 17:01:50,405] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[2020-06-05 17:01:50,424] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-05 17:02:05,640] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap.min.css.map HTTP/1.1" 200 542194
+[2020-06-05 17:06:39,657] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 17:06:42,616] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 15479
+[2020-06-05 17:06:42,662] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-05 17:06:42,714] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+[2020-06-05 17:07:28,377] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 17:07:28,500] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-05 17:07:32,077] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 15463
+[2020-06-05 17:07:32,116] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-05 17:09:01,118] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 17:09:01,295] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-05 17:09:07,236] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 15463
+[2020-06-05 17:09:07,287] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-05 17:10:42,655] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 17:10:42,888] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-05 17:10:46,456] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 15447
+[2020-06-05 17:10:46,867] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-05 17:13:44,004] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 17:13:44,143] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-05 17:13:45,880] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 15447
+[2020-06-05 17:13:46,275] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-05 17:19:07,468] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 17:19:10,061] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-05 17:19:10,116] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-05 17:35:29,051] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-05 17:35:29,213] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-05 17:35:30,884] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 14182
+[2020-06-05 17:35:31,290] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541

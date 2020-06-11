@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link REL="SHORTCUT ICON" HREF="{% static "images/favicon.ico" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+    <script src="{% static 'js/jQuery/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <style>
+        .logintop {
+            height: 47px;
+            position: absolute;
+            top: 0;
+            background: url({% static 'images/loginbg1.png' %}) repeat-x;
+            z-index: 100;
+            width: 100%;
+        }
+
+        .logintop span {
+            line-height: 47px;
+            background: url({% static 'images/loginsj.png' %}) no-repeat 21px 18px;
+            text-indent: 44px;
+            color: #afc5d2;
+            float: left;
+        }
+
+        .logintop ul {
+            float: right;
+            padding-right: 30px;
+        }
+
+        .logintop ul li {
+            float: left;
+            margin-left: 20px;
+            line-height: 47px;
+        }
+
+        .logintop ul li a {
+            color: #afc5d2;
+        }
+
+        .logintop ul li a:hover {
+            color: #fff;
+        }
+
+        #box {
+            width: 350px;
+            height: 370px;
+            border: 1px solid #E2E3E5;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -185px;
+            margin-top: -200px;
+            background-color: white;
+        }
+
+        #logo {
+            width: 370px;
+            height: 95px;
+            font-size: 30px;
+            color: #676A6C;
+            line-height: 95px;
+            margin-left: 40px;
+        }
+
+        #user {
+            width: 295px;
+            height: 50px;
+            margin-left: 40px;
+        }
+
+        #pass {
+            width: 295px;
+            height: 50px;
+            margin-left: 40px;
+        }
+
+        #btn-login {
+            width: 295px;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body style="background-color:#1c77ac; background-image:url({% static 'images/light.png' %}); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+<div class="logintop">
+    <span>欢迎登录中继仿真平台</span>
+</div>
+<div id="box">
+    <div id="logo">欢迎登陆！</div>
+
+    <div id="info">
+        <form {% url 'user:user_login' %} method="post" class="form-horizontal">
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="text" name="username" class="form-control" id="user" placeholder="用户名">
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" id="pass" placeholder="密　码">
+                <i class="fa fa-lock"></i>
+            </div>
+            <div class="error btns login-form-tips" id="jsLoginTips">
+                {{ msg }}
+                {% for key,err in user_login_form.errors.items %}
+                    {{ err }}
+                {% endfor %}
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-info" id="btn-login">登录</button>
+            </div>
+
+        </form>
+
+
+    </div>
+</div>
+</body>
+</html>

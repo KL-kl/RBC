@@ -1,0 +1,479 @@
+[2020-06-03 10:15:10,672] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 10:15:10,800] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap.min.css HTTP/1.1" 200 121218
+[2020-06-03 10:15:10,817] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap-table.min.css HTTP/1.1" 200 8803
+[2020-06-03 10:15:10,818] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/font-awesome.min.css HTTP/1.1" 200 32437
+[2020-06-03 10:15:10,822] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/font-change.css HTTP/1.1" 200 1389
+[2020-06-03 10:15:10,823] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/jquery/jquery.datatables.min.css HTTP/1.1" 200 13806
+[2020-06-03 10:15:10,824] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap-table-fixed-columns.css HTTP/1.1" 200 635
+[2020-06-03 10:15:10,835] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap-editable.css HTTP/1.1" 200 21619
+[2020-06-03 10:15:10,840] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js HTTP/1.1" 200 28392
+[2020-06-03 10:15:10,845] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js HTTP/1.1" 200 9447
+[2020-06-03 10:15:10,848] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js HTTP/1.1" 304 0
+[2020-06-03 10:15:10,849] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js HTTP/1.1" 304 0
+[2020-06-03 10:15:10,851] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js HTTP/1.1" 200 6049
+[2020-06-03 10:15:10,851] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js HTTP/1.1" 304 0
+[2020-06-03 10:15:10,852] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js HTTP/1.1" 304 0
+[2020-06-03 10:15:11,053] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-03 10:15:14,261] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-03 10:15:15,419] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 10:15:20,853] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2450, in relay_compare
+    with open(os.path.join(path, relayFile.name), 'wb+') as f:
+PermissionError: [Errno 13] Permission denied: 'D:\\job\\Relay_forecasting_Tool\\upload/cmnetwin/relay/10期现状.xlsx'
+[2020-06-03 10:15:20,876] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18521
+[2020-06-03 10:18:54,573] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 10:18:58,152] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 10:19:04,078] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2518, in relay_compare
+    relaydic = dict(d1.items()+d2.items())
+TypeError: unsupported operand type(s) for +: 'dict_items' and 'dict_items'
+[2020-06-03 10:19:04,130] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18411
+[2020-06-03 10:21:25,995] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 10:21:26,233] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-03 10:21:28,055] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 10:21:33,738] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2518, in relay_compare
+    relaydic = dict(d1,**d2)
+TypeError: unsupported operand type(s) for +: 'dict_items' and 'dict_items'
+[2020-06-03 10:21:33,842] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18397
+[2020-06-03 10:21:47,147] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 10:26:35,471] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 10:26:41,048] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 10:30:26,403] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 10:30:29,236] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 10:30:35,217] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 10:30:44,000] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2519, in relay_compare
+    relaydic = sorted(relaydic,key=list(dd.keys()))
+TypeError: 'list' object is not callable
+[2020-06-03 10:30:44,063] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18350
+[2020-06-03 10:31:52,276] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 10:31:54,848] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 10:32:01,489] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2548, in relay_compare
+    for k, v in relaydic.items():
+AttributeError: 'list' object has no attribute 'items'
+[2020-06-03 10:32:01,536] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18363
+[2020-06-03 10:45:00,814] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 10:45:05,964] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 10:45:11,814] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 10:51:38,312] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 10:51:46,016] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 10:51:50,739] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 10:52:24,921] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2519, in relay_compare
+    sorted_dict = list(map(lambda x: {x: relaydic[x]}, list(dd.keys())))
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2519, in <lambda>
+    sorted_dict = list(map(lambda x: {x: relaydic[x]}, list(dd.keys())))
+KeyError: '北京5~北京5'
+[2020-06-03 10:52:24,993] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18513
+[2020-06-03 11:03:47,780] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 11:03:53,372] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 11:04:03,576] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2548, in relay_compare
+    for k, v in sorted_dict.items():
+AttributeError: 'list' object has no attribute 'items'
+[2020-06-03 11:04:03,689] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18367
+[2020-06-03 11:12:40,363] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 11:12:43,592] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 11:12:49,288] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2554, in relay_compare
+    for k, v in sorted_dict.items():
+AttributeError: 'list' object has no attribute 'items'
+[2020-06-03 11:12:49,406] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18369
+[2020-06-03 12:00:24,529] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:00:27,673] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:00:33,377] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 12:00:41,840] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2526, in relay_compare
+    relaydic = dict(d1,**d2,**d3)
+TypeError: type object got multiple values for keyword argument '西藏3~北京5'
+[2020-06-03 12:00:41,909] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18416
+[2020-06-03 12:03:42,382] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:03:47,558] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:03:49,849] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:04:07,403] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:04:13,376] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 12:23:37,567] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:23:46,796] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:23:53,564] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2529, in relay_compare
+    relaydic.update(i)
+ValueError: dictionary update sequence element #0 has length 7; 2 is required
+[2020-06-03 12:23:53,643] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18401
+[2020-06-03 12:31:43,605] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:31:49,427] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:31:55,790] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2540, in relay_compare
+    res.update(i)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[2020-06-03 12:31:55,871] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18400
+[2020-06-03 12:32:33,066] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:32:37,195] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:32:43,912] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2540, in relay_compare
+    res.update(di)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[2020-06-03 12:32:43,999] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18401
+[2020-06-03 12:34:17,669] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:34:20,369] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:34:26,562] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2540, in relay_compare
+    res.update(di)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+[2020-06-03 12:34:26,649] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18401
+[2020-06-03 12:36:48,873] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:36:54,633] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:37:01,505] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 12:41:14,335] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:41:17,005] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:41:24,422] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 12:47:58,951] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 12:48:05,452] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-03 12:48:06,150] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 12:48:12,796] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 13:16:34,454] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 13:16:38,644] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-03 13:16:39,535] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 13:16:46,635] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 13:20:28,793] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 13:20:33,298] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-03 13:20:38,367] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /IPwinUpload/iprelay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\IPwinUpload\views.py", line 1536, in iprelay_compare
+    wb = xlrd.open_workbook(path1, formatting_info=True)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\job\\Relay_forecasting_Tool\\excel\\ipwin\\new_book.xls'
+[2020-06-03 13:20:38,408] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /IPwinUpload/iprelay_compare/ HTTP/1.1" 500 18644
+[2020-06-03 13:20:49,896] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /IPwinUpload/iprelay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\IPwinUpload\views.py", line 1536, in iprelay_compare
+    wb = xlrd.open_workbook(path1, formatting_info=True)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\job\\Relay_forecasting_Tool\\excel\\ipwin\\new_book.xls'
+[2020-06-03 13:20:49,927] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /IPwinUpload/iprelay_compare/ HTTP/1.1" 500 18644
+[2020-06-03 13:22:59,580] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 13:23:02,661] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 13:23:09,345] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 13:26:55,639] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 13:26:58,779] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 13:27:04,186] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 13:27:12,386] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 13:31:52,121] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 13:31:54,584] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 13:32:01,105] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 13:32:08,069] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 14:00:58,918] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 14:01:01,996] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 14:01:08,010] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2546, in relay_compare
+    sh = book2.add_sheet('分省电路表', cell_overwrite_ok=True)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlwt\Workbook.py", line 371, in add_sheet
+    raise Exception("duplicate worksheet name %r" % sheetname)
+Exception: duplicate worksheet name '分省电路表'
+[2020-06-03 14:01:08,108] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18563
+[2020-06-03 14:01:15,266] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2546, in relay_compare
+    sh = book2.add_sheet('分省电路表', cell_overwrite_ok=True)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlwt\Workbook.py", line 371, in add_sheet
+    raise Exception("duplicate worksheet name %r" % sheetname)
+Exception: duplicate worksheet name '分省电路表'
+[2020-06-03 14:01:15,391] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18563
+[2020-06-03 14:02:49,225] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 14:02:54,234] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 14:03:00,599] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2553, in relay_compare
+    sec_col.width = 256 * 20
+AttributeError: 'list' object has no attribute 'width'
+[2020-06-03 14:03:00,687] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18356
+[2020-06-03 14:03:29,111] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 14:03:31,635] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 14:03:39,083] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 14:19:29,475] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-03 14:19:29,530] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[2020-06-03 14:19:29,552] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-03 14:19:29,639] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+[2020-06-03 14:33:00,793] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-03 14:33:41,223] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 14:35:53,962] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-03 14:35:54,031] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-03 14:35:56,093] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 14:36:03,130] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 14:36:03,318] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-03 14:36:05,385] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-03 14:36:09,766] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 14:36:10,758] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-03 14:36:11,590] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 14:36:12,225] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-03 14:36:12,963] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 14:36:13,743] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-03 14:36:14,515] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 14:55:06,064] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-03 14:55:06,227] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-03 14:55:11,947] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 14:55:12,109] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-03 14:55:17,385] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-03 14:55:18,350] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-03 14:55:19,373] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 14:55:19,914] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 14:55:20,356] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 14:55:20,849] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-03 15:38:30,077] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 15:38:35,481] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 15:38:46,760] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 15:46:29,344] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 15:49:10,014] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 15:55:35,744] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 15:55:40,015] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 15:55:51,079] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 15:56:46,056] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 15:56:48,535] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 15:56:58,415] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 15:59:45,800] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 15:59:48,973] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 16:00:02,204] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 16:02:48,083] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 16:02:50,958] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 16:03:00,203] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 16:28:01,409] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 16:28:04,441] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 16:28:12,521] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 16:28:29,690] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 17:12:27,983] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 17:12:30,351] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 17:12:37,663] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 17:12:53,889] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2676, in relay_compare
+    relay_direction()
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2732, in relay_direction
+    if flow != '' and flow > 0:
+TypeError: '>' not supported between instances of 'str' and 'int'
+[2020-06-03 17:12:54,045] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18510
+[2020-06-03 17:15:04,014] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 17:15:06,169] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 17:15:14,953] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2676, in relay_compare
+    relay_direction()
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2732, in relay_direction
+    if flow != '' or flow > 0:
+TypeError: '>' not supported between instances of 'str' and 'int'
+[2020-06-03 17:15:15,041] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18508
+[2020-06-03 17:16:30,687] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 17:16:34,388] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 17:16:44,950] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 17:34:39,953] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 17:34:46,508] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 17:34:56,436] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 17:43:07,403] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 17:43:11,960] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 17:43:17,446] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_compare/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\book.py", line 474, in sheet_by_name
+    sheetx = self._sheet_names.index(sheet_name)
+ValueError: '中继带宽T2' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2485, in relay_compare
+    sh1 = wb.sheet_by_name('中继带宽T2')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\book.py", line 476, in sheet_by_name
+    raise XLRDError('No sheet named <%r>' % sheet_name)
+xlrd.biffh.XLRDError: No sheet named <'中继带宽T2'>
+[2020-06-03 17:43:17,487] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 500 18794
+[2020-06-03 17:44:47,878] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 17:44:52,508] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 17:45:06,871] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-06-03 17:45:25,577] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loading3.gif HTTP/1.1" 200 6750
+[2020-06-03 17:45:29,695] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-06-03 17:46:45,211] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=HfxcspHekLKUUaxKsk8vcA7SvCXwUNqtXmrqyEwuAY8TOlphMWgDy5Xct2o84FzR&pro_type=2 HTTP/1.1" 200 51
+[2020-06-03 17:46:58,125] [views.py:2432] [views:relay_calculation] [INFO]- 不做方案对比
+[2020-06-03 17:46:58,125] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_calculation/ HTTP/1.1" 200 51
+[2020-06-03 17:52:40,093] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 17:52:43,703] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 17:52:49,675] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/relay_calculation/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 2407, in relay_calculation
+    bandwidth3)
+  File "D:\job\Relay_forecasting_Tool\apps\utils\zhongjidaikuan100GE.py", line 35, in band_100GE
+    if T1 >= zs2:
+TypeError: '>=' not supported between instances of 'int' and 'str'
+[2020-06-03 17:52:49,695] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/relay_calculation/ HTTP/1.1" 500 18591
+[2020-06-03 18:00:13,824] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 18:00:21,018] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-03 18:00:21,867] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 18:00:29,165] [views.py:2432] [views:relay_calculation] [INFO]- 不做方案对比
+[2020-06-03 18:00:29,166] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_calculation/ HTTP/1.1" 200 51
+[2020-06-03 18:04:20,697] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 18:04:24,249] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-03 18:04:24,401] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-03 18:04:25,515] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 18:04:39,247] [views.py:2432] [views:relay_calculation] [INFO]- 不做方案对比
+[2020-06-03 18:04:39,248] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_calculation/ HTTP/1.1" 200 51
+[2020-06-03 18:07:32,193] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 18:07:38,797] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-03 18:07:41,968] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-03 18:07:48,793] [views.py:2432] [views:relay_calculation] [INFO]- 不做方案对比
+[2020-06-03 18:07:48,793] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_calculation/ HTTP/1.1" 200 51
+[2020-06-03 18:08:13,683] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 18:08:22,723] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 18:11:14,322] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 18:11:17,906] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 18:11:24,958] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 18:11:36,514] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-06-03 18:13:31,486] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-03 18:13:35,101] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-06-03 18:13:43,385] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 172
+[2020-06-03 18:14:41,370] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63

@@ -1,0 +1,1054 @@
+{#{% extends 'base.html' %}#}
+{% load staticfiles %}
+{#{% block title %}#}
+{#    IP专用承载网工程#}
+{#{% endblock %}#}
+{% block css %}
+
+    <style>
+
+        body {
+            position: relative;
+        }
+
+        /*遮罩层显示时body的样式*/
+        .notScroll {
+            overflow: hidden;
+        }
+
+        .wrap {
+            padding-left: 30px;
+        }
+
+        .project {
+            width: 800px;
+        }
+
+        .tubiao {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            text-align: center;
+            line-height: 50px;
+            width: 50px;
+            height: 50px;
+            color: white;
+            font-size: 10px;
+            background-color: lightsteelblue;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        a:link, a:visited {
+            text-decoration: none;
+        {#color: black;#}
+        }
+
+        .border_h4 {
+            height: 30px;
+            border-left: 5px solid steelblue;
+            border-bottom: 1px dashed;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h4 {
+            padding-left: 10px;
+            display: inline;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        table {
+            width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid #47b4ec;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px 0;
+            border: 1px solid midnightblue;
+        }
+
+        #div1 input[type='text'] {
+            width: 50px;
+        }
+
+        #div1 p {
+            font-weight: bold;
+        }
+
+        #div2 input[type='text'] {
+            width: 50px;
+        }
+
+        #div2 p {
+            font-weight: bold;
+        }
+
+        #div3 input[type='text'] {
+            width: 50px;
+        }
+
+        #div3 p {
+            font-weight: bold;
+        }
+
+        .yw_div {
+            padding-left: 20px;
+        }
+
+        #select {
+            width: 150px;
+            height: 30px;
+            border: 1px solid grey;
+            border-radius: 4px;
+        }
+
+        #_input {
+            width: 120px;
+            height: 30px;
+            border-radius: 4px 0 0 4px;
+            margin-left: -154px;
+        }
+
+        #search_node1 {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            padding: 7px 10px;
+            color: white;
+            border: #428bca solid 1px;
+            background-color: #428bca;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        #search_node1:hover {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            padding: 6px 10px;
+            color: white;
+            border: #2a6496 solid 1px;
+            background-color: steelblue;
+
+        }
+
+        #res1 {
+            width: 200px;
+            height: 40px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            float: left;
+        }
+
+        #node1 {
+            width: 185px;
+            height: 40px;
+            border-radius: 4px 0 0 4px;
+            margin-left: -204px;
+        }
+
+        .datagrid-mask {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        {#opacity: .5;#}{#filter: alpha(opacity=30);#}{#background-color: #172b4d;#} background: rgba(23, 43, 77, 0.45);
+            display: none;
+
+        }
+
+        .datagrid-mask-msg {
+            position: absolute;
+            margin-top: -60px;
+            padding: 12px 15px 10px 30px;
+            width: auto;
+            height: 16px;
+            line-height: 16px;
+            display: none;
+
+        }
+
+        .img1 {
+            vertical-align: middle;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div id="box" data-spy="scroll" data-target="#myNavbar" data-offset="30">
+        <nav aria-label="breadcrumb" id="myNavbar">
+            <ol class="breadcrumb">
+                <li><a style="color: cadetblue" href="{% url 'index' %}">首页</a></li>
+                <li aria-current="page">IP承载网骨干网工程</li>
+                <li><a style="color: #0c5460" href="#d1">项目信息</a></li>
+                <li><a style="color: #0c5460" href="#d2">Metric信息</a></li>
+                <li><a style="color: #0c5460" href="#d3">业务需求信息</a></li>
+                <li><a style="color: #0c5460" href="#d4">故障轮巡</a></li>
+                <li><a style="color: #0c5460" href="#d5">中继电路</a></li>
+            </ol>
+        </nav>
+        <div class="wrap">
+
+            <div class="project">
+                <div id="d1">
+                    <div class="border_h4">
+                        <h4>项目信息</h4>
+                    </div>
+                    <div class="panel-body">
+                        <form action="" role="form" method="post"
+                              enctype="multipart/form-data">
+                            {% csrf_token %}
+
+                            <div class="from-group">
+                                <label for="pro_name">工程名称:</label>
+                                <input class="form-control" id="pro_name1" type="text" name="pro_name1"
+                                       value="IP专网骨干网XX期工程"
+                                       \>
+                                <p class="help-block">例：中国移动IP专用承载网骨干网XX期工程----简称：IP专网骨干网XX期工程</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="file">节点信息上传:</label>
+                                <input style="display: inline-block" type="file" id="node_file1" name="node_file1"/>
+                                <input type="submit" id="node_btn2" value="上传"/>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div id="d2">
+                    <div class="border_h4">
+                        <h4>Metric信息</h4>
+                    </div>
+                    <p class="audi">
+                        <input type="radio" value="1" name="metric">直接上传Metric表
+                        <input type="radio" value="2" name="metric">根据计算得到metric
+                    </p>
+                    <div id="m1" style="display: none">
+                        <form action="" method="post" role="form"
+                              enctype="multipart/form-data">
+                            <input style="display: inline-block;" type="file" id="metric_file" name="metric_file">
+                            <input id="metric1" type="submit" value="上传"/>
+                        </form>
+
+                    </div>
+                    <div id="m2" style="display: none">
+
+                        <div class="container">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Metric
+                                计算方式1--根据链路角色+传输距离计算
+                            </button>
+                            <!--  定义模态框触发器，此处为按钮触发  -->
+                            <form method="post" action="" class="form-horizontal"
+                                  role="form" id="myForm"
+                                  onsubmit="return ">
+                                {% csrf_token %}
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                     aria-labelledby="myModalLabel"
+                                     aria-hidden="true">
+                                    <!--  定义模态框，过渡效果为淡入，id为myModal,tabindex=-1可以禁用使用tab切换，aria-labelledby用于引用模态框的标题，aria-hidden=true保持模态框在触发前窗口不可见  -->
+                                    <div class="modal-dialog modal-lg">
+                                        <!--  显示模态框对话框模型（若不写下一个div则没有颜色）  -->
+                                        <div class="modal-content">
+                                            <!--  显示模态框白色背景，所有内容都写在这个div里面  -->
+
+                                            <div class="btn-info modal-header">
+                                                <!--  模态框标题  -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <!--  关闭按钮  -->
+                                                <h4>Metric 计算方式1--根据链路角色+传输距离计算</h4>
+                                                <!--  标题内容  -->
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <!--  模态框内容，我在此处添加一个表单 -->
+                                                <form class="form-horizontal" role="form">
+                                                    <div id="div1">
+                                                        <label style="font-size: 16px">导入传输距离表：</label>
+                                                        <input type="file" id="distance_file" name="distance_file">
+                                                        <hr>
+                                                        <p>核心CR节点间互联链路:</p>
+                                                        &emsp;链路角色赋值1<input name="js1" id="js1" type="text" value="300">＋传输距离/传输距离Metric折算系数1<input
+                                                            type="text"
+                                                            name="zs1" id="zs1" value="1"><br><br>
+
+                                                        <p>汇聚BR节点至核心CR节点间互联链路:</p>
+                                                        &emsp;链路角色赋值2<input type="text" value="5000" id="js2"
+                                                                            name="js2">＋传输距离/传输距离Metric折算系数2<input
+                                                            type="text"
+                                                            value="1" name="zs2" id="zs2"><br><br>
+
+                                                        <p>同省成对汇聚BR节点间互联链路:</p>
+                                                        &emsp;链路角色赋值3<input type="text" value="300" id="js3" name="js3">
+                                                        -
+                                                        <input
+                                                                type="text" id="zs3" name="zs3">([1,n]1——n
+                                                        之间的任意正整数)<br><br>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <!--  模态框底部样式，一般是提交或者确定按钮 -->
+                                                <button type="button" id="metric2" class="btn btn-primary">确定</button>
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">取消
+                                                </button>
+                                                <a href="{% url 'IPwinUpload:down_metric1' %}"
+                                                   class="btn btn-primary btn-small">导出</a>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                    </div>
+                                </div> <!-- /.modal -->
+                            </form>
+                        </div>
+                        <div class="container">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal_2">Metric
+                                计算方式2--根据传输距离计算
+                            </button>
+
+                            <!--  定义模态框触发器，此处为按钮触发  -->
+
+                            <form method="post" action="" class="form-horizontal"
+                                  role="form" id="myForm2"
+                                  onsubmit="return ">
+                                {% csrf_token %}
+                                <div class="modal fade" id="myModal_2" tabindex="-1" role="dialog"
+                                     aria-labelledby="myModalLabel"
+                                     aria-hidden="true">
+                                    <!--  定义模态框，过渡效果为淡入，id为myModal,tabindex=-1可以禁用使用tab切换，aria-labelledby用于引用模态框的标题，aria-hidden=true保持模态框在触发前窗口不可见  -->
+                                    <div class="modal-dialog modal-lg">
+                                        <!--  显示模态框对话框模型（若不写下一个div则没有颜色）  -->
+                                        <div class="modal-content">
+                                            <!--  显示模态框白色背景，所有内容都写在这个div里面  -->
+
+                                            <div class="btn-info modal-header">
+                                                <!--  模态框标题  -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <!--  关闭按钮  -->
+                                                <h4>Metric 计算方式2--根据传输距离计算</h4>
+                                                <!--  标题内容  -->
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <!--  模态框内容，我在此处添加一个表单 -->
+                                                <form class="form-horizontal" role="form">
+                                                    <div id="div2">
+                                                        <label style="font-size: 16px">导入传输距离表：</label>
+                                                        <input type="file" id="distance_file2" name="distance_file2">
+                                                        <hr>
+                                                        <p>核心CR节点间互联链路:</p>
+                                                        &emsp;传输距离/传输距离Metric折算系数1<input type="text" name="zs1_1"
+                                                                                         id="zs1_1"
+                                                                                         value="1">
+
+                                                        <p>汇聚BR节点至核心CR节点间互联链路:</p>
+                                                        &emsp;传输距离/传输距离Metric折算系数2<input type="text" name="zs2_2"
+                                                                                         id="zs2_2"
+                                                                                         value="1">
+
+                                                        <p>同省成对汇聚BR节点间互联链路:</p>
+                                                        &emsp;链路角色赋值3<input type="text" name="js3_3" id="js3_3"
+                                                                            value="300">-<input
+                                                            type="text" id="zs3_3" name="zs3_3">[1,n](
+                                                        1——n
+                                                        之间的任意正整数)
+
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <!--  模态框底部样式，一般是提交或者确定按钮 -->
+                                                <button type="button" id="metric3" class="btn btn-info btn-small">确定
+                                                </button>
+                                                <button type="button" class="btn btn-primary btn-small"
+                                                        data-dismiss="modal">取消
+                                                </button>
+                                                <a href="{% url 'IPwinUpload:down_metric1' %}"
+                                                   class="btn btn-primary btn-small">导出</a>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                    </div>
+                                </div> <!-- /.modal -->
+                            </form>
+                        </div>
+                        <div class="container">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal_3">Metric
+                                计算方式3--根据链路角色计算
+                            </button>
+
+                            <!--  定义模态框触发器，此处为按钮触发  -->
+
+                            <form method="post" action="" class="form-horizontal"
+                                  role="form" id="myForm3"
+                                  onsubmit="return ">
+                                {% csrf_token %}
+                                <div class="modal fade" id="myModal_3" tabindex="-1" role="dialog"
+                                     aria-labelledby="myModalLabel"
+                                     aria-hidden="true">
+                                    <!--  定义模态框，过渡效果为淡入，id为myModal,tabindex=-1可以禁用使用tab切换，aria-labelledby用于引用模态框的标题，aria-hidden=true保持模态框在触发前窗口不可见  -->
+                                    <div class="modal-dialog modal-lg">
+                                        <!--  显示模态框对话框模型（若不写下一个div则没有颜色）  -->
+                                        <div class="modal-content">
+                                            <!--  显示模态框白色背景，所有内容都写在这个div里面  -->
+
+                                            <div class="btn-info modal-header">
+                                                <!--  模态框标题  -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <!--  关闭按钮  -->
+                                                <h4>Metric 计算方式3--根据链路角色计算</h4>
+                                                <!--  标题内容  -->
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <!--  模态框内容，我在此处添加一个表单 -->
+                                                <form class="form-horizontal" role="form">
+                                                    <div id="div3">
+
+                                                        <p>核心CR节点间互联链路:</p>
+                                                        &emsp;链路角色赋值1<input type="text" name="js_1" id="js_1"
+                                                                            value="300">
+
+                                                        <p>汇聚BR节点至核心CR节点间互联链路:</p>
+                                                        &emsp;链路角色赋值2<input type="text" name="js_2" id="js_2"
+                                                                            value="5000">
+
+                                                        <p>同省成对汇聚BR节点间互联链路:</p>
+                                                        &emsp;链路角色赋值3<input type="text" name="js_3" id="js_3"
+                                                                            value="300">-<input
+                                                            type="text" name="zs_3" id="zs_3">[1,n](
+                                                        1——n
+                                                        之间的任意正整数)
+
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <!--  模态框底部样式，一般是提交或者确定按钮 -->
+                                                <button type="button" id="metric4" class="btn btn-info btn-small">确定
+                                                </button>
+                                                <button type="button" class="btn btn-primary btn-small"
+                                                        data-dismiss="modal">取消
+                                                </button>
+                                                <a href="{% url 'IPwinUpload:down_metric1' %}"
+                                                   class="btn btn-primary btn-small">导出</a>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                    </div>
+                                </div> <!-- /.modal -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="d3">
+                    <div class="border_h4">
+                        <h4>业务需求信息</h4>
+                    </div>
+                    <div class="yw_div">
+                        <form enctype="multipart/form-data" action="" method="post">
+                            {% csrf_token %}
+                            <label>业务复用系数:</label>
+                            <input id="xs" class="xs" type="text" name="xs" value="80" \>%<br><br>
+
+                            <label>业务表导入计算点点互访流量:</label>
+                            <div class="btn_div">
+
+                                <input style="float: left" type="file" id="myfiles" name="myfiles" multiple="">
+
+                                <input id="file_btn" type="submit" value="上传"/>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                </div>
+                <div id="d4">
+                    <div class="border_h4">
+                        <h4>故障轮巡</h4>
+                    </div>
+                    <div class="row" style="margin-left: 25px">
+                        <form action="" method="post" enctype="multipart/form-data">
+
+                            <label style="font-size: 16px">导入TE指定路由表：</label>
+                            <input style="display: inline-block" type="file" id="te_file" name="te_file">
+                            <input id="tefile_btn" type="submit" value="上传"/>
+
+                        </form>
+                    </div>
+
+
+                    <div class="btn-group" style="margin-left: 25px">
+                        <button id="wentai" type="button" class="btn btn-primary">稳态计算</button>
+                        <button id="gz" type="button" class="btn btn-primary">故障轮巡计算</button>
+                        <button id="te" type="button" class="btn btn-primary">TE计算</button>
+                    </div>
+
+                    <hr>
+                    <div class="row" style="margin-left: 20px">
+                        <form action="" role="form" method="post">
+                            <label>故障轮巡计算结果导出</label>
+                            <div class="form-group">
+                                <input type="text" style="display: inline-block;" class="form-control" id="filename1"
+                                       placeholder="请输入关键字">
+                                <span id="search_node1" onclick="search_nfile();">搜索</span>
+                            </div>
+                        </form>
+                        <form action="{% url 'IPwinUpload:down_route' %}" role="form" method="post">
+                            {% csrf_token %}
+                            <label>选择列表</label>
+                            <div class="form-group">
+                                <input id="node1" type="text" name="node1" placeholder="请选择——">
+
+                                <select id="res1" onchange="a()" placeholder="请选择——">
+
+                                </select>
+
+                            </div>
+                            <input type="submit" value="点击下载"/>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="d5">
+                <div class="border_h4">
+                    <h4>中继电路</h4>
+                </div>
+                <div class="row" style="margin-left: 25px">
+                    <form action="" method="post" role="form">
+                        <div class="form-group">
+                            <span style="margin-top: 10px">链路利用率:</span>
+                            <input id="link_use" type="text" placeholder="请输入IP专网链路利用率...">%
+                        </div>
+                        <div class="form-group">
+
+                            <span>链路颗粒度:</span>
+
+                            <p>
+
+                                <select name="select_5" id="select" onchange="a()" placeholder="请选择——">
+                                    <option value="1">10GPOS</option>
+                                    <option value="2">10GE</option>
+                                    <option value="3">100GE</option>
+                                    <option value="4">400GE</option>
+                                </select>
+                                <input id="_input" type="text" value="" placeholder="请选择——">
+                            </p>
+                        </div>
+                        <div class="form-group">
+
+                            <label>折算系数：</label><br>
+                            >= <input type="text" style="width: 80px" id="v1" value="12">个10GE 转换为 1 个100GE <br>
+                            >= <input type="text" style="width: 80px" id="v2" value="2">个100GE 转换为 1 个400GE
+
+                        </div>
+                        <div class="row">
+                            是否多方案
+                            <input type="radio" name="plan" value="1">是
+                            <input type="radio" name="plan" value="2">否
+                        </div>
+
+                        <button class="btn btn-primary" id="link_btn">计算</button>
+                    </form>
+                    <hr>
+                    {#            <label for="">结果导出：</label>#}
+                    {#            <a href="{% url 'IPwinUpload:report_down_load' %}">导出</a>#}
+                    <form action="{% url 'IPwinUpload:report_down_load' %}" role="form" method="post">
+                        {% csrf_token %}
+                        <label for="">结果导出：</label>
+                        <input type="submit" class="btn btn-primary" value="导出">
+
+                    </form>
+                    {#            <button type="button" class="btn btn-primary" data-dismiss="modal">导出#}
+                    {#            </button>#}
+                </div>
+
+            </div>
+        </div>
+        {##}
+        {#</div>#}
+        <a href="##" id="gotop" class="tubiao"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+{% endblock %}
+
+{% block myjs %}
+
+    <script type="text/javascript">
+
+        /*----回到顶部按钮------*/
+        $(function () {
+            go();
+            $('#gotop').click(function () {
+                $('html,body').animate({scrollTop: '0px'}, 1000)
+            })
+        });
+
+        function go() {
+
+            $(window).on('scroll', function () {
+                /*当滚动条的垂直位置大于一定高度时，回到顶部按钮就显示 */
+                if ($(window).scrollTop() > 500)
+                    $('.tubiao').fadeIn();
+                else
+                    $('.tubiao').fadeOut();
+            });
+
+        }
+        $(window).trigger('scroll');
+        /*------------------*/
+
+
+        {# metric单选按钮#}
+        $(".audi").change(function () {
+            var val = $('input:radio[name="metric"]:checked').val();
+            console.log(val);
+            if (val == 1) {
+                //点击通过后隐藏此模块
+                $("#m1").show();
+                $("#m2").hide();
+            } else if (val == 2) {
+                //点击展示此模块
+                $("#m2").show();
+                $("#m1").hide();
+            }
+        });
+
+        {# 节点信息上传 #}
+        $("#node_btn2").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('pro_name1', document.getElementById("pro_name1").value);
+            {#formdata.append('pm', $("input[name='pm']:checked").val());#}
+            formdata.append('node_file1', document.getElementById("node_file1").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            console.log(formdata);
+            $.ajax({
+                url: "{% url 'IPwinUpload:upload_Ifile' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                beforeSend: function () {
+                    console.log("正在进行，请稍候......");
+                },
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+        {#  直接上传metric表  #}
+
+        $("#metric1").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('metric_file', document.getElementById("metric_file").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            console.log(formdata);
+            $.ajax({
+                url: "{% url 'IPwinUpload:up_metric1' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+        {#  metric计算原则一：  #}
+
+        $("#metric2").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('distance_file', document.getElementById("distance_file").files[0]);
+            formdata.append('js1', document.getElementById("js1").value);
+            formdata.append('zs1', document.getElementById("zs1").value);
+            formdata.append('js2', document.getElementById("js2").value);
+            formdata.append('zs2', document.getElementById("zs2").value);
+            formdata.append('js3', document.getElementById("js3").value);
+            formdata.append('zs3', document.getElementById("zs3").value);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+
+            $.ajax({
+                url: "{% url 'IPwinUpload:up_metric2' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+        {#  metric计算原则二：  #}
+
+        $("#metric3").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('distance_file2', document.getElementById("distance_file2").files[0]);
+            formdata.append('zs1', document.getElementById("zs1_1").value);
+            formdata.append('zs2', document.getElementById("zs2_2").value);
+            formdata.append('js3', document.getElementById("js3_3").value);
+            formdata.append('zs3', document.getElementById("zs3_3").value);
+
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            console.log(formdata);
+            $.ajax({
+                url: "{% url 'IPwinUpload:up_metric3' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+        {#  metric计算原则三：  #}
+
+        $("#metric4").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('js_1', document.getElementById("js_1").value);
+            formdata.append('js_2', document.getElementById("js_2").value);
+            formdata.append('js_3', document.getElementById("js_3").value);
+            formdata.append('zs_3', document.getElementById("zs_3").value);
+
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            {#console.log(formdata);#}
+            $.ajax({
+                url: "{% url 'IPwinUpload:up_metric4' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+        {#  业务需求上传：  #}
+
+        $("#file_btn").click(function (event) {
+            event.preventDefault();//阻止默认提交
+            var formdata = new FormData();
+            formdata.append('xs', document.getElementById('xs').value);
+            formdata.append('pro_type', '1');
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            for (var i = 0; i < $('#myfiles')[0].files.length; i++) {
+                formdata.append('myfiles', $('#myfiles')[0].files[i]);
+            }
+            console.log(formdata);
+            $.ajax({
+                url: "{% url 'IPwinUpload:up_maxfile' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                }
+            });
+
+        });
+
+        {#故障搜索#}
+
+        function search_nfile() {
+            var val = document.getElementById('filename1').value;
+
+            $.ajax({
+                url: "{% url 'IPwinUpload:search_routefile' %}",//后台接收参数的文件地址
+                type: "post",//提交数据的方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                data: {
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val(),
+                    val: val,
+                },
+
+                success: function (result) {
+
+                    if (result.status == 'ok') {
+
+                        $("#res1").find("option").remove();
+
+                        var msg = eval(result.msg);
+
+                        for (var i = 0; i < msg.length; i++) {
+                            $('#res1').append('<option value="' + msg[i] + '">' + msg[i] + '</option>')  // 依次增加选项
+                        }
+                    }
+
+                },
+                error: function () {
+                    alert("异常！");
+                }
+            });
+        }
+
+        {# 下拉菜单选项显示在text中 #}
+
+        function a() {
+            $('#_input').val($('#select option:selected').text());
+            $('#node1').val($('#res1 option:selected').text());
+
+        }
+
+        //loading
+        function EasyUILoad() {
+
+            $("<div class=\"datagrid-mask\"></div>").css({
+                display: "block",
+                width: "100%",
+                height: "100%",
+            }).appendTo("body");
+            $("<div class=\"datagrid-mask-msg\"></div>").html("<img src='{% static "images/loading3.gif" %}' class='img1' />  正在运行，请稍候。。。").appendTo("body").css({
+                display: "block",
+                color: '#fff',
+                left: ($('body').outerWidth(true) - 190) / 2,
+                top: ($('body').outerHeight(true) - 45) / 2
+
+            });
+            {#$('body').bind("touchmove", function (e) {#}
+            {#    e.preventDefault();#}
+
+            $('body').addClass('notScroll');
+
+        }
+
+        //display Load
+        function dispalyEasyUILoad() {
+            $(".datagrid-mask").remove();
+            $(".datagrid-mask-msg").remove();
+
+            $('body').removeClass('notScroll');
+            {#$('body').unbind("touchmove");#}
+        }
+
+
+        {# 稳态计算 #}
+        $("#wentai").click(function () {
+            EasyUILoad();
+            $.ajax({
+                type: "get",
+                url: "{% url 'CMNETwinUpload:import_excel' %}",// 请求的url地址
+                data: {
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val(),
+                    pro_type: '1',
+                },
+                dataType: "json",//json写了jq会帮我们转换成数组或者对象 他已经用JSON.parse弄好了
+                success: function (res) { // 成功拿到结果放到这个函数 data就是拿到的结果
+                    dispalyEasyUILoad();
+                    if (res.status == 'ok') {
+
+                        alert(res.msg, '可以去导出稳态表了')
+                    } else if (res.status == 'fail') {
+
+                        alert(res.msg)
+                    }
+                },
+                error: function () {
+                    dispalyEasyUILoad();
+                    alert('计算错误！！')
+                }
+            })
+
+        });
+
+        {# 全网故障 #}
+        $("#gz").click(function () {
+            EasyUILoad();
+            $.ajax({
+                url: "{% url 'IPwinUpload:ip_gz' %}",//发送到这
+                type: "get",
+                data: {
+                    pro_type: '1',
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                dataType: "json",     //如果后台返回的是字符串这要写上text 如果返回对象或者集合 写json
+                success: function (res) {
+                    dispalyEasyUILoad();
+                    if (res.status == "ok") {
+
+                        alert(res.msg);
+
+                    }
+                    else if (res.status == "fail") {
+
+                        alert(res.msg);
+                    }
+
+                },
+                error: function () {
+                    dispalyEasyUILoad();
+                    alert('计算错误！！！')
+                }
+            });
+        });
+        {# TE主备上传 #}
+        $("#tefile_btn").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('te_file', document.getElementById("te_file").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            EasyUILoad();
+            $.ajax({
+                url: "{% url 'IPwinUpload:te_upload' %}",//发送到这
+                type: "post",
+                data: formdata,
+                dataType: "json",     //如果后台返回的是字符串这要写上text 如果返回对象或者集合 写json
+                processData: false,   // jQuery不要去处理发送的数据
+                contentType: false,   // jQuery不要去设置Content-Type请求头
+                success: function (res) {
+
+                    if (res.status == "ok") {
+                        dispalyEasyUILoad();
+                        alert(res.msg);
+
+                    }
+                    else if (res.status == "fail") {
+                        dispalyEasyUILoad();
+                        alert(res.msg);
+                    }
+
+                }
+            });
+        });
+
+        {# TE故障 #}
+        $('#te').click(function () {
+            EasyUILoad();
+            $.ajax({
+                url: "{% url 'IPwinUpload:te_sortPath' %}",//发送到这
+                type: "get",
+                data: {
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                dataType: "json",     //如果后台返回的是字符串这要写上text 如果返回对象或者集合 写json
+                success: function (res) {
+
+                    if (res.status == "ok") {
+                        dispalyEasyUILoad();
+                        alert(res.msg);
+
+                    }
+                    else if (res.status == "fail") {
+                        dispalyEasyUILoad();
+                        alert(res.msg);
+                    }
+
+                }
+            });
+
+        });
+
+        {# 中继计算 #}
+        $('#link_btn').click(function (event) {
+            event.preventDefault();
+            var link_use = document.getElementById('link_use').value;
+            var v1 = document.getElementById('v1').value;
+            var v2 = document.getElementById('v2').value;
+            var granularity = document.getElementById('_input').value;
+            EasyUILoad();
+            $.ajax({
+                url: "{% url 'IPwinUpload:iprelay_calculation' %}",//后台接收参数的文件地址
+                type: "post",//提交数据的方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                data: {
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val(),
+                    'link_use': link_use,
+                    "v1": v1,
+                    "v2": v2,
+                    'granularity': granularity,
+                },
+                success: function (result) {
+
+                    if (result.status == 'ok') {
+                        dispalyEasyUILoad();
+                        alert(result.msg);
+                    }
+
+                },
+                error: function () {
+                    dispalyEasyUILoad();
+                    alert("异常！");
+                }
+            });
+
+        })
+
+    </script>
+{% endblock %}

@@ -1,0 +1,142 @@
+{#{% extends 'base.html' %}#}
+{% load staticfiles %}
+{#{% block title %}#}
+{#    IP承载网工程中继电路计算#}
+{#{% endblock %}#}
+{% block css %}
+
+    <style>
+
+        body {
+            position: relative;
+        }
+
+        /*遮罩层显示时body的样式*/
+        .notScroll {
+            overflow: hidden;
+        }
+
+        .wrap {
+            padding-left: 30px;
+        }
+
+        .project {
+            width: 800px;
+        }
+
+        h4 {
+            padding-left: 10px;
+            display: inline;
+            height: 30px;
+            line-height: 30px;
+        }
+
+
+
+        table {
+            width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid #47b4ec;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px 0;
+            border: 1px solid midnightblue;
+        }
+
+        #div1 input[type='text'] {
+            width: 50px;
+        }
+
+        #div1 p {
+            font-weight: bold;
+        }
+
+        #div2 input[type='text'] {
+            width: 50px;
+        }
+
+        #div2 p {
+            font-weight: bold;
+        }
+
+        #div3 input[type='text'] {
+            width: 50px;
+        }
+
+        #div3 p {
+            font-weight: bold;
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li><a style="color: cadetblue" href="{% url 'index' %}">首页</a></li>
+            <li aria-current="page">IP承载网工程</li>
+        </ol>
+    </nav>
+    <div class="wrap">
+        <div class="project">
+            <form action="" id="form1" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="relayfile">往期中继上传</label><br>
+                    <input style="display:inline-block;padding-left: 80px;" type="file" id="relayfile" class="file"
+                           name="relayfile"/>
+                </div>
+
+            </form>
+            <br><br>
+
+            <button type="submit" id="relay_btn" class="btn btn-primary btn-small">确定</button>
+
+
+            <form enctype="multipart/form-data" action="{% url 'IPwinUpload:report_down_load' %}" method="post">
+                <label>导出中继：</label>
+                {% csrf_token %}
+                <input type="text" name="filename" placeholder="请输入自定义文件名">
+                <input type="submit" value="下载"/>
+            </form>
+
+        </div>
+
+
+    </div>
+
+{% endblock content%}
+
+{% block myjs %}
+    <script type="text/javascript">
+        {#  直接上传metric表  #}
+        $("#relay_btn").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('relayfile', document.getElementById("relayfile").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+
+            $.ajax({
+                url: "{% url 'IPwinUpload:iprelay_compare' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                }
+            });
+        });
+
+    </script>
+{% endblock %}
+

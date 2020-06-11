@@ -1,0 +1,9 @@
+[2020-05-27 11:26:57,512] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-27 11:27:00,471] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 4522
+[2020-05-27 11:27:07,449] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/relay_compare/ HTTP/1.1" 200 63
+[2020-05-27 16:02:45,719] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-05-27 16:02:45,862] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-05-27 16:02:46,845] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-05-27 16:02:46,865] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[2020-05-27 16:02:46,894] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-05-27 16:02:46,967] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160

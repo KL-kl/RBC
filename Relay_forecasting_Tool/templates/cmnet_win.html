@@ -1,0 +1,385 @@
+{#{% extends 'base.html' %}#}
+<!-- 该页面不允许出现js以及css代码,content代码可直接写在本文件中，下面只是content的实例代码 -->
+{#{% block title %}#}
+{#    <!-- 此处写页面标题 -->#}
+{#    CMNET骨干网工程中继电路计算#}
+{#{% endblock %}#}
+
+{% block css %}
+    <!-- 此处填充css链接 -->
+    <style>
+
+        body {
+            position: relative;
+        }
+
+        /*遮罩层显示时body的样式*/
+        .notScroll {
+            overflow: hidden;
+        }
+
+        .wrap {
+            padding-left: 30px;
+        }
+
+        .project {
+            width: 800px;
+        }
+
+        h4 {
+            padding-left: 10px;
+            display: inline;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        table {
+            width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid #47b4ec;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px 0;
+            border: 1px solid midnightblue;
+        }
+
+        #div1 input[type='text'] {
+            width: 50px;
+        }
+
+        #div1 p {
+            font-weight: bold;
+        }
+
+        #div2 input[type='text'] {
+            width: 50px;
+        }
+
+        #div2 p {
+            font-weight: bold;
+        }
+
+        #div3 input[type='text'] {
+            width: 50px;
+        }
+
+        #div3 p {
+            font-weight: bold;
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <!-- 此处填充页面主体内容 -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li><a style="color: cadetblue" href="{% url 'index' %}">首页</a></li>
+            <li aria-current="page">CMNET骨干网工程</li>
+        </ol>
+    </nav>
+    <div class="wrap">
+        <div class="project">
+
+            <form action="" id="form1" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label for="relayfile">往期中继上传</label><br>
+                    <input style="display:inline-block;padding-left: 80px;" type="file" id="relayfile" class="file"
+                           name="relayfile"/>
+                </div>
+
+                <button type="submit" id="relay_btn" class="btn btn-primary btn-small">确定</button>
+
+            </form>
+            <hr>
+
+
+            <form enctype="multipart/form-data" action="{% url 'CMNETwinUpload:report_down_load' %}" method="post">
+                <label>导出中继：</label>
+                {% csrf_token %}
+                <input type="text" name="filename" placeholder="请输入自定义文件名">
+                <input type="submit" value="下载"/>
+            </form>
+        </div>
+
+        <div class="bottomScroll">
+            <div id="toolbar">
+                <form class="form-inline">
+
+                    <button type="button" class="btn btn-primary glyphicon glyphicon-upload">
+                        上传           
+                    </button>
+                    <button type="button" class="btn btn-primary glyphicon glyphicon-refresh" onclick="refreshTable()">
+                        刷新         
+                    </button>
+
+                </form>
+
+            </div>
+
+            <table id="table"></table>
+        </div>
+
+
+    </div>
+{% endblock %}
+{% block myjs %}
+    <!-- 此处填充js链接 -->
+    <script type="text/javascript">
+        {#  直接上传metric表  #}
+        $("#relay_btn").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('relayfile', document.getElementById("relayfile").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:relay_compare' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                }
+            });
+        });
+
+        var $table = $('#table');
+
+        $table.bootstrapTable({
+            ajax: function (request) {
+                $.ajax({
+                    type: "GET",
+                    url: "{% url 'CMNETwinUpload:show_trunkcircuit' %}",
+                    contentType: "application/json;charset=utf-8",
+                    dataType: "json",
+                    json: 'callback',
+                    success: function (json) {
+
+                        var dynamicHeader = [];
+                        dynamicHeader.push({
+                            field: "state",
+                            check: true
+                        });
+
+                        for (var i = 0; i < (Object.keys(json[0])).length; i++) {
+                            var property = (Object.keys(json[0]))[i];
+                            //console.log(property);
+                            dynamicHeader.push({
+                                "title": property,
+                                "field": property,
+                                switchable: true,
+                                sortable: true
+                            });
+                        }
+
+                        //console.log(Object.keys(json[0]));
+                        $table.bootstrapTable('destroy').bootstrapTable({
+                            data: json,
+                            toolbar: '#toolbar',
+                            {#height: 600,#}
+
+                            cache: false,
+                            striped: true, //是否显示行间隔色(斑马线)
+                            sidePagination: "client",
+                            sortOrder: "desc",
+                            pageSize: 10,
+                            pageNumber: 1,
+                            pageList: "[25, 50, 100, All]",
+                            showToggle: true, //是否显示详细视图和列表视图的切换按钮
+                            showRefresh: false,                  //是否显示刷新按钮
+                            showColumns: true,
+                            showExport: true,
+                            exportDataType: "all", //导出
+                            exportTypes: ['excel'],
+                            exportOptions: {
+                                {#ignoreColumn: [0, 1],  //忽略某一列的索引#}
+                                fileName: 'CMNet网工程中继电路信息表',  //文件名称设置
+                                worksheetName: '分省中继电路条形',  //表格工作区名称
+                                tableName: '分省中继电路条形报表',
+                                excelstyles: ['background-color', 'color', 'font-size', 'font-weight']
+                            },
+                            pagination: true,
+                            columns: [
+                                [{
+                                    title: '序号',
+                                    field: 'num',
+                                    rowspan: 2,
+                                    align: 'center',
+                                    valign: 'middle',
+                                    sortable: true,
+
+                                }, {
+                                    title: '电路局向',
+                                    field: 'trunkcircuit',
+                                    rowspan: 2,
+                                    align: 'center',
+                                    valign: 'middle',
+                                    sortable: true,
+                                }, {
+                                    title: '现状到达',
+                                    colspan: 4,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    title: '本期到达',
+                                    colspan: 4,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    title: '本期新增',
+                                    colspan: 4,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    title: '本期撤销',
+                                    colspan: 4,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }],
+
+                                [{
+                                    field: 'old100GE',
+                                    title: '100GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'old10GPOS',
+                                    title: '10GPOS',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'old10GE',
+                                    title: '10GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'old400GE',
+                                    title: '400GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'new100GE',
+                                    title: '100GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'new10GPOS',
+                                    title: '10GPOS',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'new10GE',
+                                    title: '10GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'new400GE',
+                                    title: '400GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'increase100GE',
+                                    title: '100GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'increase10GPOS',
+                                    title: '10GPOS',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'increase10GE',
+                                    title: '10GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'increase400GE',
+                                    title: '400GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'had100GE',
+                                    title: '100GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'had10GPOS',
+                                    title: '10GPOS',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'had10GE',
+                                    title: '10GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }, {
+                                    field: 'had400GE',
+                                    title: '400GE',
+                                    sortable: true,
+                                    align: 'center',
+                                    valign: 'middle',
+                                }]
+                            ],
+
+
+                        });
+                    },
+                    error: function () {
+                        alert("查询错误！");
+                        location.reload();
+                    },
+
+
+                });
+            }
+        });
+
+        function refreshTable() {
+            $table.bootstrapTable("refresh");
+        }
+
+        function saveData(index, field, value) {
+
+            $table.bootstrapTable('updateCell', {
+
+                index: index,       //行索引
+
+                field: field,       //列名
+
+                value: value        //cell值
+
+            })
+
+        }
+
+    </script>
+
+{% endblock %}

@@ -1,0 +1,1569 @@
+[2020-06-08 09:46:55,553] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-06-08 09:46:55,659] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap.min.css HTTP/1.1" 304 0
+[2020-06-08 09:46:55,669] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/font-awesome.min.css HTTP/1.1" 304 0
+[2020-06-08 09:46:55,675] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap-editable.css HTTP/1.1" 304 0
+[2020-06-08 09:46:55,679] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js HTTP/1.1" 304 0
+[2020-06-08 09:46:55,679] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js HTTP/1.1" 304 0
+[2020-06-08 09:46:55,680] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js HTTP/1.1" 304 0
+[2020-06-08 09:47:00,589] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 09:47:00,861] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 09:47:01,959] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 09:47:01,994] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[2020-06-08 09:47:02,027] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 09:47:02,112] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+[2020-06-08 09:47:07,856] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 09:47:07,943] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 09:47:09,534] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 09:47:09,616] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 09:47:09,787] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 09:47:09,876] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 09:47:10,000] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 09:47:10,089] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 09:47:11,377] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-08 09:47:13,024] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-08 09:47:30,991] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-08 09:47:53,967] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /IPwinUpload/upload_Ifile/ HTTP/1.1" 200 69
+[2020-06-08 09:48:18,106] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /IPwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-06-08 09:48:53,285] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /IPwinUpload/up_maxfile/ HTTP/1.1" 200 69
+[2020-06-08 09:49:40,385] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loading3.gif HTTP/1.1" 200 6750
+[2020-06-08 09:53:52,107] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=qiKlmwmfhlNtAK8n00rSuxiRBvPcQonMlpA6iIxU4AzlbIezmbbEGC8bEvHzXwEE&pro_type=1 HTTP/1.1" 200 51
+[2020-06-08 15:38:31,745] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3210
+[2020-06-08 15:38:35,923] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11505
+[2020-06-08 15:38:36,072] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 15:38:38,206] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /user/user_logout/ HTTP/1.1" 302 0
+[2020-06-08 15:38:38,213] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /user/user_login/ HTTP/1.1" 200 3343
+[2020-06-08 15:38:38,278] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/light.png HTTP/1.1" 200 132156
+[2020-06-08 15:38:38,280] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loginsj.png HTTP/1.1" 200 3018
+[2020-06-08 15:38:38,280] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loginbg1.png HTTP/1.1" 200 2834
+[2020-06-08 15:38:40,388] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /user/user_login/ HTTP/1.1" 302 0
+[2020-06-08 15:38:40,423] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3210
+[2020-06-08 15:38:45,660] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 15:38:53,011] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-08 15:38:54,122] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3210
+[2020-06-08 15:38:55,561] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 15:38:58,516] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 42037
+[2020-06-08 15:38:59,402] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-06-08 15:39:12,146] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3210
+[2020-06-08 15:39:12,917] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 15:39:38,606] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-08 15:39:39,210] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 14162
+[2020-06-08 15:39:39,608] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 15:40:43,720] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3210
+[2020-06-08 16:12:26,085] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 16:12:27,802] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 16:12:30,096] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:12:30,141] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 22644
+[2020-06-08 16:12:31,168] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:12:31,213] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 22644
+[2020-06-08 16:12:31,837] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:12:31,870] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 22644
+[2020-06-08 16:12:32,765] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-08 16:12:33,862] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:12:33,917] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 22644
+[2020-06-08 16:12:34,845] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:12:34,869] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 22644
+[2020-06-08 16:12:40,037] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap.min.css.map HTTP/1.1" 200 542194
+[2020-06-08 16:12:50,605] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:12:50,649] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 22644
+[2020-06-08 16:12:51,154] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:12:51,198] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 22644
+[2020-06-08 16:13:10,280] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:13:10,322] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 22644
+[2020-06-08 16:13:21,233] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin_2/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 58, in CMNETwin_2
+    return render(request, 'f1.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 571, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[2020-06-08 16:13:21,297] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 500 167200
+[2020-06-08 16:13:21,708] [base.py:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+[2020-06-08 16:13:21,709] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2665
+[2020-06-08 16:14:33,442] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 16:14:34,545] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 16:14:36,449] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 22831
+[2020-06-08 16:14:36,474] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591604074604 HTTP/1.1" 200 6049
+[2020-06-08 16:14:36,474] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591604074603 HTTP/1.1" 200 9447
+[2020-06-08 16:14:36,475] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591604074601 HTTP/1.1" 200 28392
+[2020-06-08 16:14:36,476] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591604074600 HTTP/1.1" 200 82068
+[2020-06-08 16:14:36,476] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591604074599 HTTP/1.1" 200 96383
+[2020-06-08 16:14:36,477] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591604074602 HTTP/1.1" 200 114691
+[2020-06-08 16:14:36,483] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591604074605 HTTP/1.1" 200 32704
+[2020-06-08 16:14:36,484] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591604074606 HTTP/1.1" 200 37336
+[2020-06-08 16:14:36,484] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591604074607 HTTP/1.1" 200 74174
+[2020-06-08 16:14:36,858] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 16:19:32,564] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 16:19:33,875] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 16:19:35,877] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 20976
+[2020-06-08 16:19:35,890] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591604373926 HTTP/1.1" 200 96383
+[2020-06-08 16:19:35,893] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591604373927 HTTP/1.1" 200 82068
+[2020-06-08 16:19:35,899] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591604373930 HTTP/1.1" 200 9447
+[2020-06-08 16:19:35,900] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591604373931 HTTP/1.1" 200 6049
+[2020-06-08 16:19:35,900] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591604373928 HTTP/1.1" 200 28392
+[2020-06-08 16:19:35,901] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591604373929 HTTP/1.1" 200 114691
+[2020-06-08 16:19:35,905] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591604373932 HTTP/1.1" 200 32704
+[2020-06-08 16:19:35,905] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591604373933 HTTP/1.1" 200 37336
+[2020-06-08 16:19:35,910] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591604373934 HTTP/1.1" 200 74174
+[2020-06-08 16:19:36,301] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 16:19:38,767] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 20976
+[2020-06-08 16:19:38,780] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591604375943 HTTP/1.1" 200 96383
+[2020-06-08 16:19:38,792] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 20976
+[2020-06-08 16:19:38,795] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591604375944 HTTP/1.1" 200 82068
+[2020-06-08 16:19:38,806] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591604375945 HTTP/1.1" 200 28392
+[2020-06-08 16:19:38,814] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591604375946 HTTP/1.1" 200 114691
+[2020-06-08 16:19:38,825] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591604375947 HTTP/1.1" 200 9447
+[2020-06-08 16:19:38,838] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591604375948 HTTP/1.1" 200 6049
+[2020-06-08 16:19:38,844] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591604375949 HTTP/1.1" 200 32704
+[2020-06-08 16:19:38,853] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591604375950 HTTP/1.1" 200 37336
+[2020-06-08 16:19:38,859] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591604375951 HTTP/1.1" 200 74174
+[2020-06-08 16:19:39,077] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591604375952 HTTP/1.1" 200 96383
+[2020-06-08 16:19:39,248] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591604375953 HTTP/1.1" 200 82068
+[2020-06-08 16:19:39,249] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 16:19:39,266] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591604375954 HTTP/1.1" 200 28392
+[2020-06-08 16:19:39,273] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591604375955 HTTP/1.1" 200 114691
+[2020-06-08 16:19:39,280] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591604375956 HTTP/1.1" 200 9447
+[2020-06-08 16:19:39,284] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591604375957 HTTP/1.1" 200 6049
+[2020-06-08 16:19:39,291] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591604375958 HTTP/1.1" 200 32704
+[2020-06-08 16:19:39,297] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591604375959 HTTP/1.1" 200 37336
+[2020-06-08 16:19:39,303] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591604375960 HTTP/1.1" 200 74174
+[2020-06-08 16:19:39,668] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 16:20:08,393] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 16:20:09,355] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 16:20:12,335] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 20976
+[2020-06-08 16:20:12,348] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591604409414 HTTP/1.1" 200 96383
+[2020-06-08 16:20:12,350] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591604409415 HTTP/1.1" 200 82068
+[2020-06-08 16:20:12,354] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591604409419 HTTP/1.1" 200 6049
+[2020-06-08 16:20:12,354] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591604409418 HTTP/1.1" 200 9447
+[2020-06-08 16:20:12,354] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591604409416 HTTP/1.1" 200 28392
+[2020-06-08 16:20:12,356] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591604409417 HTTP/1.1" 200 114691
+[2020-06-08 16:20:12,366] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591604409420 HTTP/1.1" 200 32704
+[2020-06-08 16:20:12,367] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591604409421 HTTP/1.1" 200 37336
+[2020-06-08 16:20:12,367] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591604409422 HTTP/1.1" 200 74174
+[2020-06-08 16:20:12,791] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 16:31:29,403] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 16:31:30,466] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 16:31:32,730] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 52, in CMNETwin
+    return render(request, 'CMNETwin.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1232: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2020-06-08 16:31:32,773] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 500 22637
+[2020-06-08 16:31:33,969] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 52, in CMNETwin
+    return render(request, 'CMNETwin.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1232: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2020-06-08 16:31:34,010] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 500 22638
+[2020-06-08 16:31:34,770] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 52, in CMNETwin
+    return render(request, 'CMNETwin.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1232: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2020-06-08 16:31:34,810] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 500 22638
+[2020-06-08 16:31:35,633] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 52, in CMNETwin
+    return render(request, 'CMNETwin.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1232: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2020-06-08 16:31:35,692] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 500 22638
+[2020-06-08 16:31:39,241] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 52, in CMNETwin
+    return render(request, 'CMNETwin.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1232: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2020-06-08 16:31:39,273] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 500 22638
+[2020-06-08 16:31:51,682] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/CMNETwin/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 52, in CMNETwin
+    return render(request, 'CMNETwin.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loaders\base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 515, in parse
+    raise self.error(token, e)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1232: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2020-06-08 16:31:51,768] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 500 187262
+[2020-06-08 16:31:52,086] [base.py:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+[2020-06-08 16:31:52,087] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2665
+[2020-06-08 16:32:40,055] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89416
+[2020-06-08 16:32:40,286] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 16:32:52,998] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 16:32:53,180] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 16:32:55,166] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89416
+[2020-06-08 16:32:55,184] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591605173082 HTTP/1.1" 200 96383
+[2020-06-08 16:32:55,186] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591605173083 HTTP/1.1" 200 82068
+[2020-06-08 16:32:55,192] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591605173087 HTTP/1.1" 200 6049
+[2020-06-08 16:32:55,192] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591605173086 HTTP/1.1" 200 9447
+[2020-06-08 16:32:55,194] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591605173084 HTTP/1.1" 200 28392
+[2020-06-08 16:32:55,196] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591605173088 HTTP/1.1" 200 32704
+[2020-06-08 16:32:55,196] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591605173089 HTTP/1.1" 200 37336
+[2020-06-08 16:32:55,197] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591605173085 HTTP/1.1" 200 114691
+[2020-06-08 16:32:55,199] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591605173090 HTTP/1.1" 200 74174
+[2020-06-08 16:33:04,268] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 4402
+[2020-06-08 16:39:48,383] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 16:39:49,834] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 11508
+[2020-06-08 16:39:54,853] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 51711
+[2020-06-08 16:39:54,870] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591605589891 HTTP/1.1" 200 96383
+[2020-06-08 16:39:54,871] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591605589892 HTTP/1.1" 200 82068
+[2020-06-08 16:39:54,877] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591605589896 HTTP/1.1" 200 6049
+[2020-06-08 16:39:54,879] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591605589895 HTTP/1.1" 200 9447
+[2020-06-08 16:39:54,879] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591605589893 HTTP/1.1" 200 28392
+[2020-06-08 16:39:54,880] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591605589897 HTTP/1.1" 200 32704
+[2020-06-08 16:39:54,881] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591605589894 HTTP/1.1" 200 114691
+[2020-06-08 16:39:54,881] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591605589898 HTTP/1.1" 200 37336
+[2020-06-08 16:39:54,884] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591605589899 HTTP/1.1" 200 74174
+[2020-06-08 16:39:56,571] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89416
+[2020-06-08 16:39:56,588] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89416
+[2020-06-08 16:39:56,590] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591605594922 HTTP/1.1" 200 96383
+[2020-06-08 16:39:56,611] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591605594923 HTTP/1.1" 200 82068
+[2020-06-08 16:39:56,621] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591605594924 HTTP/1.1" 200 28392
+[2020-06-08 16:39:56,629] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591605594925 HTTP/1.1" 200 114691
+[2020-06-08 16:39:56,641] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591605594926 HTTP/1.1" 200 9447
+[2020-06-08 16:39:56,647] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591605594927 HTTP/1.1" 200 6049
+[2020-06-08 16:39:56,652] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591605594928 HTTP/1.1" 200 32704
+[2020-06-08 16:39:56,663] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591605594929 HTTP/1.1" 200 37336
+[2020-06-08 16:39:56,669] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591605594930 HTTP/1.1" 200 74174
+[2020-06-08 16:39:56,727] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591605594931 HTTP/1.1" 200 96383
+[2020-06-08 16:39:56,746] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591605594932 HTTP/1.1" 200 82068
+[2020-06-08 16:39:56,753] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591605594933 HTTP/1.1" 200 28392
+[2020-06-08 16:39:56,763] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591605594934 HTTP/1.1" 200 114691
+[2020-06-08 16:39:56,781] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591605594935 HTTP/1.1" 200 9447
+[2020-06-08 16:39:56,787] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591605594936 HTTP/1.1" 200 6049
+[2020-06-08 16:39:56,792] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591605594937 HTTP/1.1" 200 32704
+[2020-06-08 16:39:56,798] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591605594938 HTTP/1.1" 200 37336
+[2020-06-08 16:39:56,803] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591605594939 HTTP/1.1" 200 74174
+[2020-06-08 16:39:58,580] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 16:39:58,584] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 16:39:58,588] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 16:39:58,592] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 16:39:58,639] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 16:39:58,664] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 16:39:58,704] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 16:39:58,735] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 16:40:00,148] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 16:40:00,152] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 16:40:00,156] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 16:40:00,160] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 16:40:00,306] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 16:40:00,454] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 16:40:00,597] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 16:40:00,778] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 16:45:54,687] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\user\views.py", line 9, in index
+    return render(request, 'index.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'relay' not found. 'relay' is not a valid view function or pattern name.
+[2020-06-08 16:45:54,758] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 135852
+[2020-06-08 16:46:43,380] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3215
+[2020-06-08 16:46:43,510] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 16:46:44,513] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /base/ HTTP/1.1" 200 12022
+[2020-06-08 16:46:46,274] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 51711
+[2020-06-08 16:46:46,289] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606004576 HTTP/1.1" 200 96383
+[2020-06-08 16:46:46,292] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606004577 HTTP/1.1" 200 82068
+[2020-06-08 16:46:46,298] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606004580 HTTP/1.1" 200 9447
+[2020-06-08 16:46:46,300] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606004581 HTTP/1.1" 200 6049
+[2020-06-08 16:46:46,301] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606004578 HTTP/1.1" 200 28392
+[2020-06-08 16:46:46,303] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606004582 HTTP/1.1" 200 32704
+[2020-06-08 16:46:46,304] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606004583 HTTP/1.1" 200 37336
+[2020-06-08 16:46:46,304] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606004579 HTTP/1.1" 200 114691
+[2020-06-08 16:46:46,305] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606004584 HTTP/1.1" 200 74174
+[2020-06-08 16:46:47,774] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89416
+[2020-06-08 16:46:47,792] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89416
+[2020-06-08 16:46:47,794] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606006343 HTTP/1.1" 200 96383
+[2020-06-08 16:46:47,817] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606006344 HTTP/1.1" 200 82068
+[2020-06-08 16:46:47,827] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606006345 HTTP/1.1" 200 28392
+[2020-06-08 16:46:47,842] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606006346 HTTP/1.1" 200 114691
+[2020-06-08 16:46:47,854] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606006347 HTTP/1.1" 200 9447
+[2020-06-08 16:46:47,860] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606006348 HTTP/1.1" 200 6049
+[2020-06-08 16:46:47,866] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606006349 HTTP/1.1" 200 32704
+[2020-06-08 16:46:47,875] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606006350 HTTP/1.1" 200 37336
+[2020-06-08 16:46:47,882] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606006351 HTTP/1.1" 200 74174
+[2020-06-08 16:46:47,929] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606006352 HTTP/1.1" 200 96383
+[2020-06-08 16:46:47,944] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606006353 HTTP/1.1" 200 82068
+[2020-06-08 16:46:47,950] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606006354 HTTP/1.1" 200 28392
+[2020-06-08 16:46:47,956] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606006355 HTTP/1.1" 200 114691
+[2020-06-08 16:46:47,964] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606006356 HTTP/1.1" 200 9447
+[2020-06-08 16:46:47,969] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606006357 HTTP/1.1" 200 6049
+[2020-06-08 16:46:47,974] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606006358 HTTP/1.1" 200 32704
+[2020-06-08 16:46:47,979] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606006359 HTTP/1.1" 200 37336
+[2020-06-08 16:46:47,985] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606006360 HTTP/1.1" 200 74174
+[2020-06-08 16:46:49,038] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 16:46:49,042] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 16:46:49,046] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 16:46:49,050] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 16:46:49,086] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 16:46:49,112] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 16:46:49,140] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 16:46:49,171] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 16:46:50,532] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 16:46:50,537] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 16:46:50,541] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 16:46:50,546] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress2/ HTTP/1.1" 200 5190
+[2020-06-08 16:46:50,689] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 16:46:50,844] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 16:46:50,989] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 16:46:51,166] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_metric/ HTTP/1.1" 200 83849
+[2020-06-08 16:53:55,046] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /base/ HTTP/1.1" 200 12022
+[2020-06-08 16:53:55,195] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 16:53:57,369] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 12372
+[2020-06-08 16:53:57,384] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606435131 HTTP/1.1" 200 96383
+[2020-06-08 16:53:57,394] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606435135 HTTP/1.1" 200 9447
+[2020-06-08 16:53:57,395] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606435136 HTTP/1.1" 200 6049
+[2020-06-08 16:53:57,397] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606435133 HTTP/1.1" 200 28392
+[2020-06-08 16:53:57,398] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606435137 HTTP/1.1" 200 32704
+[2020-06-08 16:53:57,399] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606435132 HTTP/1.1" 200 82068
+[2020-06-08 16:53:57,399] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606435134 HTTP/1.1" 200 114691
+[2020-06-08 16:53:57,405] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606435138 HTTP/1.1" 200 37336
+[2020-06-08 16:53:57,406] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606435139 HTTP/1.1" 200 74174
+[2020-06-08 16:54:26,394] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 12372
+[2020-06-08 16:54:26,406] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606437405 HTTP/1.1" 200 96383
+[2020-06-08 16:54:26,411] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 12372
+[2020-06-08 16:54:26,425] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606437406 HTTP/1.1" 200 82068
+[2020-06-08 16:54:26,435] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606437407 HTTP/1.1" 200 28392
+[2020-06-08 16:54:26,444] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606437408 HTTP/1.1" 200 114691
+[2020-06-08 16:54:26,455] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606437409 HTTP/1.1" 200 9447
+[2020-06-08 16:54:26,461] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606437410 HTTP/1.1" 200 6049
+[2020-06-08 16:54:26,466] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606437411 HTTP/1.1" 200 32704
+[2020-06-08 16:54:26,474] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606437412 HTTP/1.1" 200 37336
+[2020-06-08 16:54:26,481] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606437413 HTTP/1.1" 200 74174
+[2020-06-08 16:54:26,499] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606437414 HTTP/1.1" 200 96383
+[2020-06-08 16:54:26,508] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606437415 HTTP/1.1" 200 82068
+[2020-06-08 16:54:26,515] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606437416 HTTP/1.1" 200 28392
+[2020-06-08 16:54:26,521] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606437417 HTTP/1.1" 200 114691
+[2020-06-08 16:54:26,527] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606437418 HTTP/1.1" 200 9447
+[2020-06-08 16:54:26,532] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606437419 HTTP/1.1" 200 6049
+[2020-06-08 16:54:26,538] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606437420 HTTP/1.1" 200 32704
+[2020-06-08 16:54:26,544] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606437421 HTTP/1.1" 200 37336
+[2020-06-08 16:54:26,549] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606437422 HTTP/1.1" 200 74174
+[2020-06-08 16:54:27,551] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 23191
+[2020-06-08 16:54:27,566] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606466503 HTTP/1.1" 200 96383
+[2020-06-08 16:54:27,573] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606466507 HTTP/1.1" 200 9447
+[2020-06-08 16:54:27,574] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606466505 HTTP/1.1" 200 28392
+[2020-06-08 16:54:27,575] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606466508 HTTP/1.1" 200 6049
+[2020-06-08 16:54:27,577] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606466506 HTTP/1.1" 200 114691
+[2020-06-08 16:54:27,578] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606466504 HTTP/1.1" 200 82068
+[2020-06-08 16:54:27,583] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606466509 HTTP/1.1" 200 32704
+[2020-06-08 16:54:27,584] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606466510 HTTP/1.1" 200 37336
+[2020-06-08 16:54:27,587] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 23191
+[2020-06-08 16:54:27,587] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606466511 HTTP/1.1" 200 74174
+[2020-06-08 16:54:27,821] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606466514 HTTP/1.1" 200 28392
+[2020-06-08 16:54:27,868] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606466512 HTTP/1.1" 200 96383
+[2020-06-08 16:54:27,896] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606466513 HTTP/1.1" 200 82068
+[2020-06-08 16:54:27,936] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606466516 HTTP/1.1" 200 9447
+[2020-06-08 16:54:27,954] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606466517 HTTP/1.1" 200 6049
+[2020-06-08 16:54:27,955] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 16:54:27,956] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606466518 HTTP/1.1" 200 32704
+[2020-06-08 16:54:27,959] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606466515 HTTP/1.1" 200 114691
+[2020-06-08 16:54:27,960] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606466519 HTTP/1.1" 200 37336
+[2020-06-08 16:54:27,962] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 23191
+[2020-06-08 16:54:27,963] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606466520 HTTP/1.1" 200 74174
+[2020-06-08 16:54:27,984] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606466521 HTTP/1.1" 200 96383
+[2020-06-08 16:54:27,985] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606466523 HTTP/1.1" 200 28392
+[2020-06-08 16:54:27,985] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606466525 HTTP/1.1" 200 9447
+[2020-06-08 16:54:27,988] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606466522 HTTP/1.1" 200 82068
+[2020-06-08 16:54:27,993] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 23191
+[2020-06-08 16:54:27,995] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606466526 HTTP/1.1" 200 6049
+[2020-06-08 16:54:27,998] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606466524 HTTP/1.1" 200 114691
+[2020-06-08 16:54:27,999] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606466527 HTTP/1.1" 200 32704
+[2020-06-08 16:54:28,058] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606466528 HTTP/1.1" 200 37336
+[2020-06-08 16:54:28,188] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606466529 HTTP/1.1" 200 74174
+[2020-06-08 16:54:28,267] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591606466534 HTTP/1.1" 200 9447
+[2020-06-08 16:54:28,279] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591606466530 HTTP/1.1" 200 96383
+[2020-06-08 16:54:28,334] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591606466532 HTTP/1.1" 200 28392
+[2020-06-08 16:54:28,339] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591606466535 HTTP/1.1" 200 6049
+[2020-06-08 16:54:28,384] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591606466533 HTTP/1.1" 200 114691
+[2020-06-08 16:54:28,393] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591606466536 HTTP/1.1" 200 32704
+[2020-06-08 16:54:28,394] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591606466531 HTTP/1.1" 200 82068
+[2020-06-08 16:54:28,395] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 16:54:28,396] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591606466537 HTTP/1.1" 200 37336
+[2020-06-08 16:54:28,396] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591606466538 HTTP/1.1" 200 74174
+[2020-06-08 16:54:28,746] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 17:28:24,901] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /base/ HTTP/1.1" 200 15880
+[2020-06-08 17:28:25,062] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:28:27,034] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89471
+[2020-06-08 17:28:27,052] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591608504987 HTTP/1.1" 200 96383
+[2020-06-08 17:28:27,056] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591608504988 HTTP/1.1" 200 82068
+[2020-06-08 17:28:27,062] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591608504992 HTTP/1.1" 200 6049
+[2020-06-08 17:28:27,063] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591608504991 HTTP/1.1" 200 9447
+[2020-06-08 17:28:27,064] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591608504989 HTTP/1.1" 200 28392
+[2020-06-08 17:28:27,065] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591608504993 HTTP/1.1" 200 32704
+[2020-06-08 17:28:27,066] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591608504990 HTTP/1.1" 200 114691
+[2020-06-08 17:28:27,066] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591608504994 HTTP/1.1" 200 37336
+[2020-06-08 17:28:27,077] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591608504995 HTTP/1.1" 200 74174
+[2020-06-08 17:41:49,582] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\user\views.py", line 9, in index
+    return render(request, 'index.html')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'base' not found. 'base' is not a valid view function or pattern name.
+[2020-06-08 17:41:49,621] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 135832
+[2020-06-08 17:41:52,516] [base.py:152] [base:get_response] [WARNING]- Not Found: /relay/
+[2020-06-08 17:41:52,516] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /relay/ HTTP/1.1" 404 2650
+[2020-06-08 17:42:47,690] [base.py:152] [base:get_response] [WARNING]- Not Found: /relay/
+[2020-06-08 17:42:47,691] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /relay/ HTTP/1.1" 404 2650
+[2020-06-08 17:42:48,948] [base.py:152] [base:get_response] [WARNING]- Not Found: /relay/
+[2020-06-08 17:42:48,949] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /relay/ HTTP/1.1" 404 2650
+[2020-06-08 17:42:49,239] [base.py:152] [base:get_response] [WARNING]- Not Found: /relay/
+[2020-06-08 17:42:49,239] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /relay/ HTTP/1.1" 404 2650
+[2020-06-08 17:45:27,913] [base.py:152] [base:get_response] [WARNING]- Not Found: /relay/
+[2020-06-08 17:45:27,914] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /relay/ HTTP/1.1" 404 2650
+[2020-06-08 17:46:30,480] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 17:46:31,809] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 15711
+[2020-06-08 17:46:50,586] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 17:48:37,733] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3216
+[2020-06-08 17:48:39,519] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 12152
+[2020-06-08 17:49:47,218] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 13463
+[2020-06-08 17:49:47,320] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:54:34,149] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 14158
+[2020-06-08 17:54:34,343] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:55:02,964] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 14158
+[2020-06-08 17:55:03,162] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:57:10,954] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 15551
+[2020-06-08 17:57:11,119] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:57:12,762] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 51638
+[2020-06-08 17:57:12,780] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610231037 HTTP/1.1" 200 96383
+[2020-06-08 17:57:12,783] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610231038 HTTP/1.1" 200 82068
+[2020-06-08 17:57:12,790] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610231042 HTTP/1.1" 200 6049
+[2020-06-08 17:57:12,791] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610231041 HTTP/1.1" 200 9447
+[2020-06-08 17:57:12,792] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610231039 HTTP/1.1" 200 28392
+[2020-06-08 17:57:12,793] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610231043 HTTP/1.1" 200 32704
+[2020-06-08 17:57:12,794] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610231044 HTTP/1.1" 200 37336
+[2020-06-08 17:57:12,794] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610231040 HTTP/1.1" 200 114691
+[2020-06-08 17:57:12,797] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610231045 HTTP/1.1" 200 74174
+[2020-06-08 17:57:16,919] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:57:16,955] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610232836 HTTP/1.1" 200 96383
+[2020-06-08 17:57:16,976] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:57:16,978] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610232837 HTTP/1.1" 200 82068
+[2020-06-08 17:57:16,991] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610232838 HTTP/1.1" 200 28392
+[2020-06-08 17:57:16,999] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610232839 HTTP/1.1" 200 114691
+[2020-06-08 17:57:17,010] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610232840 HTTP/1.1" 200 9447
+[2020-06-08 17:57:17,016] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610232841 HTTP/1.1" 200 6049
+[2020-06-08 17:57:17,021] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610232842 HTTP/1.1" 200 32704
+[2020-06-08 17:57:17,031] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610232843 HTTP/1.1" 200 37336
+[2020-06-08 17:57:17,037] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610232844 HTTP/1.1" 200 74174
+[2020-06-08 17:57:17,086] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610232845 HTTP/1.1" 200 96383
+[2020-06-08 17:57:17,100] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610232846 HTTP/1.1" 200 82068
+[2020-06-08 17:57:17,106] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610232847 HTTP/1.1" 200 28392
+[2020-06-08 17:57:17,112] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610232848 HTTP/1.1" 200 114691
+[2020-06-08 17:57:17,120] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610232849 HTTP/1.1" 200 9447
+[2020-06-08 17:57:17,124] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610232850 HTTP/1.1" 200 6049
+[2020-06-08 17:57:17,130] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610232851 HTTP/1.1" 200 32704
+[2020-06-08 17:57:17,135] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610232852 HTTP/1.1" 200 37336
+[2020-06-08 17:57:17,140] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610232853 HTTP/1.1" 200 74174
+[2020-06-08 17:57:18,522] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 17:57:18,526] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 17:57:18,530] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 17:57:18,534] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_progress1/ HTTP/1.1" 200 17315
+[2020-06-08 17:57:18,581] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 17:57:18,619] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 17:57:18,661] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 17:57:18,698] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_node/ HTTP/1.1" 200 222442
+[2020-06-08 17:57:20,397] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 51638
+[2020-06-08 17:57:20,427] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610237099 HTTP/1.1" 200 9447
+[2020-06-08 17:57:20,434] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610237097 HTTP/1.1" 200 28392
+[2020-06-08 17:57:20,434] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 51638
+[2020-06-08 17:57:20,435] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610237096 HTTP/1.1" 200 82068
+[2020-06-08 17:57:20,437] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610237100 HTTP/1.1" 200 6049
+[2020-06-08 17:57:20,438] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610237095 HTTP/1.1" 200 96383
+[2020-06-08 17:57:20,439] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610237098 HTTP/1.1" 200 114691
+[2020-06-08 17:57:20,452] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610237101 HTTP/1.1" 200 32704
+[2020-06-08 17:57:20,453] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610237102 HTTP/1.1" 200 37336
+[2020-06-08 17:57:20,454] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610237103 HTTP/1.1" 200 74174
+[2020-06-08 17:57:20,482] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610237104 HTTP/1.1" 200 96383
+[2020-06-08 17:57:20,491] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610237108 HTTP/1.1" 200 9447
+[2020-06-08 17:57:20,496] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610237106 HTTP/1.1" 200 28392
+[2020-06-08 17:57:20,496] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 51638
+[2020-06-08 17:57:20,497] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610237109 HTTP/1.1" 200 6049
+[2020-06-08 17:57:20,500] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610237105 HTTP/1.1" 200 82068
+[2020-06-08 17:57:20,501] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610237110 HTTP/1.1" 200 32704
+[2020-06-08 17:57:20,501] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610237107 HTTP/1.1" 200 114691
+[2020-06-08 17:57:20,502] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610237111 HTTP/1.1" 200 37336
+[2020-06-08 17:57:20,516] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610237112 HTTP/1.1" 200 74174
+[2020-06-08 17:57:20,543] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610237113 HTTP/1.1" 200 96383
+[2020-06-08 17:57:20,552] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 51638
+[2020-06-08 17:57:20,554] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610237117 HTTP/1.1" 200 9447
+[2020-06-08 17:57:20,554] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610237115 HTTP/1.1" 200 28392
+[2020-06-08 17:57:20,555] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610237118 HTTP/1.1" 200 6049
+[2020-06-08 17:57:20,557] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610237114 HTTP/1.1" 200 82068
+[2020-06-08 17:57:20,559] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610237116 HTTP/1.1" 200 114691
+[2020-06-08 17:57:20,560] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610237119 HTTP/1.1" 200 32704
+[2020-06-08 17:57:20,560] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610237120 HTTP/1.1" 200 37336
+[2020-06-08 17:57:20,563] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610237121 HTTP/1.1" 200 74174
+[2020-06-08 17:57:20,594] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610237122 HTTP/1.1" 200 96383
+[2020-06-08 17:57:20,604] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610237127 HTTP/1.1" 200 6049
+[2020-06-08 17:57:20,604] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610237126 HTTP/1.1" 200 9447
+[2020-06-08 17:57:20,605] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610237124 HTTP/1.1" 200 28392
+[2020-06-08 17:57:20,605] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610237123 HTTP/1.1" 200 82068
+[2020-06-08 17:57:20,605] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610237128 HTTP/1.1" 200 32704
+[2020-06-08 17:57:20,607] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610237125 HTTP/1.1" 200 114691
+[2020-06-08 17:57:20,626] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610237129 HTTP/1.1" 200 37336
+[2020-06-08 17:57:20,628] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610237130 HTTP/1.1" 200 74174
+[2020-06-08 17:57:25,554] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 15551
+[2020-06-08 17:57:25,697] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:57:28,006] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 12624
+[2020-06-08 17:57:28,017] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610245633 HTTP/1.1" 200 96383
+[2020-06-08 17:57:28,020] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610245634 HTTP/1.1" 200 82068
+[2020-06-08 17:57:28,025] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610245638 HTTP/1.1" 200 6049
+[2020-06-08 17:57:28,026] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610245637 HTTP/1.1" 200 9447
+[2020-06-08 17:57:28,028] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610245635 HTTP/1.1" 200 28392
+[2020-06-08 17:57:28,029] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610245640 HTTP/1.1" 200 37336
+[2020-06-08 17:57:28,030] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610245639 HTTP/1.1" 200 32704
+[2020-06-08 17:57:28,031] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610245636 HTTP/1.1" 200 114691
+[2020-06-08 17:57:28,033] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610245641 HTTP/1.1" 200 74174
+[2020-06-08 17:57:45,503] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 15551
+[2020-06-08 17:57:45,590] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:57:47,769] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:57:47,784] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610265556 HTTP/1.1" 200 96383
+[2020-06-08 17:57:47,793] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610265561 HTTP/1.1" 200 6049
+[2020-06-08 17:57:47,794] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610265560 HTTP/1.1" 200 9447
+[2020-06-08 17:57:47,794] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610265557 HTTP/1.1" 200 82068
+[2020-06-08 17:57:47,794] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610265558 HTTP/1.1" 200 28392
+[2020-06-08 17:57:47,795] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610265562 HTTP/1.1" 200 32704
+[2020-06-08 17:57:47,796] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610265559 HTTP/1.1" 200 114691
+[2020-06-08 17:57:47,801] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610265563 HTTP/1.1" 200 37336
+[2020-06-08 17:57:47,801] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610265564 HTTP/1.1" 200 74174
+[2020-06-08 17:57:51,128] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:57:51,137] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:57:51,142] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610267801 HTTP/1.1" 200 96383
+[2020-06-08 17:57:51,154] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610267802 HTTP/1.1" 200 82068
+[2020-06-08 17:57:51,169] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610267803 HTTP/1.1" 200 28392
+[2020-06-08 17:57:51,175] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610267804 HTTP/1.1" 200 114691
+[2020-06-08 17:57:51,181] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610267805 HTTP/1.1" 200 9447
+[2020-06-08 17:57:51,187] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610267806 HTTP/1.1" 200 6049
+[2020-06-08 17:57:51,192] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610267807 HTTP/1.1" 200 32704
+[2020-06-08 17:57:51,197] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610267808 HTTP/1.1" 200 37336
+[2020-06-08 17:57:51,203] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610267809 HTTP/1.1" 200 74174
+[2020-06-08 17:57:51,223] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610267810 HTTP/1.1" 200 96383
+[2020-06-08 17:57:51,235] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610267811 HTTP/1.1" 200 82068
+[2020-06-08 17:57:51,241] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610267812 HTTP/1.1" 200 28392
+[2020-06-08 17:57:51,247] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610267813 HTTP/1.1" 200 114691
+[2020-06-08 17:57:51,254] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610267814 HTTP/1.1" 200 9447
+[2020-06-08 17:57:51,259] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610267815 HTTP/1.1" 200 6049
+[2020-06-08 17:57:51,263] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610267816 HTTP/1.1" 200 32704
+[2020-06-08 17:57:51,271] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610267817 HTTP/1.1" 200 37336
+[2020-06-08 17:57:51,276] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610267818 HTTP/1.1" 200 74174
+[2020-06-08 17:57:51,897] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:57:51,915] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610271230 HTTP/1.1" 200 96383
+[2020-06-08 17:57:51,922] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610271234 HTTP/1.1" 200 9447
+[2020-06-08 17:57:51,924] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610271232 HTTP/1.1" 200 28392
+[2020-06-08 17:57:51,925] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610271235 HTTP/1.1" 200 6049
+[2020-06-08 17:57:51,926] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610271231 HTTP/1.1" 200 82068
+[2020-06-08 17:57:51,930] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610271233 HTTP/1.1" 200 114691
+[2020-06-08 17:57:51,936] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:57:51,937] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610271236 HTTP/1.1" 200 32704
+[2020-06-08 17:57:51,938] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610271237 HTTP/1.1" 200 37336
+[2020-06-08 17:57:51,939] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610271238 HTTP/1.1" 200 74174
+[2020-06-08 17:57:51,983] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:57:51,987] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610271243 HTTP/1.1" 200 9447
+[2020-06-08 17:57:51,987] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610271241 HTTP/1.1" 200 28392
+[2020-06-08 17:57:51,989] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610271239 HTTP/1.1" 200 96383
+[2020-06-08 17:57:51,989] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610271240 HTTP/1.1" 200 82068
+[2020-06-08 17:57:51,990] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610271244 HTTP/1.1" 200 6049
+[2020-06-08 17:57:51,991] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610271242 HTTP/1.1" 200 114691
+[2020-06-08 17:57:52,004] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610271245 HTTP/1.1" 200 32704
+[2020-06-08 17:57:52,004] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610271246 HTTP/1.1" 200 37336
+[2020-06-08 17:57:52,005] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610271247 HTTP/1.1" 200 74174
+[2020-06-08 17:57:52,017] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:57:52,035] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610271248 HTTP/1.1" 200 96383
+[2020-06-08 17:57:52,038] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610271249 HTTP/1.1" 200 82068
+[2020-06-08 17:57:52,044] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610271253 HTTP/1.1" 200 6049
+[2020-06-08 17:57:52,046] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610271252 HTTP/1.1" 200 9447
+[2020-06-08 17:57:52,046] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610271250 HTTP/1.1" 200 28392
+[2020-06-08 17:57:52,048] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610271254 HTTP/1.1" 200 32704
+[2020-06-08 17:57:52,048] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610271251 HTTP/1.1" 200 114691
+[2020-06-08 17:57:52,049] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610271255 HTTP/1.1" 200 37336
+[2020-06-08 17:57:52,052] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610271256 HTTP/1.1" 200 74174
+[2020-06-08 17:57:52,089] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610271258 HTTP/1.1" 200 82068
+[2020-06-08 17:57:52,089] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610271257 HTTP/1.1" 200 96383
+[2020-06-08 17:57:52,097] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610271262 HTTP/1.1" 200 6049
+[2020-06-08 17:57:52,097] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610271261 HTTP/1.1" 200 9447
+[2020-06-08 17:57:52,099] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610271259 HTTP/1.1" 200 28392
+[2020-06-08 17:57:52,100] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610271264 HTTP/1.1" 200 37336
+[2020-06-08 17:57:52,101] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610271263 HTTP/1.1" 200 32704
+[2020-06-08 17:57:52,101] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610271260 HTTP/1.1" 200 114691
+[2020-06-08 17:57:52,104] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610271265 HTTP/1.1" 200 74174
+[2020-06-08 17:58:47,054] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 15551
+[2020-06-08 17:58:47,177] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:58:49,063] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:58:49,077] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610327124 HTTP/1.1" 200 96383
+[2020-06-08 17:58:49,086] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610327125 HTTP/1.1" 200 82068
+[2020-06-08 17:58:49,087] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610327128 HTTP/1.1" 200 9447
+[2020-06-08 17:58:49,089] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610327129 HTTP/1.1" 200 6049
+[2020-06-08 17:58:49,090] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610327126 HTTP/1.1" 200 28392
+[2020-06-08 17:58:49,090] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610327130 HTTP/1.1" 200 32704
+[2020-06-08 17:58:49,092] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610327131 HTTP/1.1" 200 37336
+[2020-06-08 17:58:49,092] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610327127 HTTP/1.1" 200 114691
+[2020-06-08 17:58:49,096] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610327132 HTTP/1.1" 200 74174
+[2020-06-08 17:58:50,485] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:50,501] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610329106 HTTP/1.1" 200 96383
+[2020-06-08 17:58:50,520] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:50,522] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610329107 HTTP/1.1" 200 82068
+[2020-06-08 17:58:50,528] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610329108 HTTP/1.1" 200 28392
+[2020-06-08 17:58:50,536] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610329109 HTTP/1.1" 200 114691
+[2020-06-08 17:58:50,542] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610329110 HTTP/1.1" 200 9447
+[2020-06-08 17:58:50,547] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610329111 HTTP/1.1" 200 6049
+[2020-06-08 17:58:50,552] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610329112 HTTP/1.1" 200 32704
+[2020-06-08 17:58:50,558] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610329113 HTTP/1.1" 200 37336
+[2020-06-08 17:58:50,564] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610329114 HTTP/1.1" 200 74174
+[2020-06-08 17:58:50,595] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610329115 HTTP/1.1" 200 96383
+[2020-06-08 17:58:50,611] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610329116 HTTP/1.1" 200 82068
+[2020-06-08 17:58:50,618] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610329117 HTTP/1.1" 200 28392
+[2020-06-08 17:58:50,624] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610329118 HTTP/1.1" 200 114691
+[2020-06-08 17:58:50,633] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610329119 HTTP/1.1" 200 9447
+[2020-06-08 17:58:50,638] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610329120 HTTP/1.1" 200 6049
+[2020-06-08 17:58:50,643] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610329121 HTTP/1.1" 200 32704
+[2020-06-08 17:58:50,659] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610329122 HTTP/1.1" 200 37336
+[2020-06-08 17:58:50,664] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610329123 HTTP/1.1" 200 74174
+[2020-06-08 17:58:53,150] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:58:53,163] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:58:53,175] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:58:53,182] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610330609 HTTP/1.1" 200 28392
+[2020-06-08 17:58:53,183] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610330611 HTTP/1.1" 200 9447
+[2020-06-08 17:58:53,183] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610330612 HTTP/1.1" 200 6049
+[2020-06-08 17:58:53,183] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610330607 HTTP/1.1" 200 96383
+[2020-06-08 17:58:53,184] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610330608 HTTP/1.1" 200 82068
+[2020-06-08 17:58:53,184] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610330610 HTTP/1.1" 200 114691
+[2020-06-08 17:58:53,189] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610330613 HTTP/1.1" 200 32704
+[2020-06-08 17:58:53,205] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:58:53,208] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610330614 HTTP/1.1" 200 37336
+[2020-06-08 17:58:53,210] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610330615 HTTP/1.1" 200 74174
+[2020-06-08 17:58:53,216] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610330620 HTTP/1.1" 200 9447
+[2020-06-08 17:58:53,216] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610330621 HTTP/1.1" 200 6049
+[2020-06-08 17:58:53,217] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610330618 HTTP/1.1" 200 28392
+[2020-06-08 17:58:53,218] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610330616 HTTP/1.1" 200 96383
+[2020-06-08 17:58:53,218] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610330617 HTTP/1.1" 200 82068
+[2020-06-08 17:58:53,219] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610330619 HTTP/1.1" 200 114691
+[2020-06-08 17:58:53,229] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610330622 HTTP/1.1" 200 32704
+[2020-06-08 17:58:53,229] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610330623 HTTP/1.1" 200 37336
+[2020-06-08 17:58:53,234] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610330627 HTTP/1.1" 200 28392
+[2020-06-08 17:58:53,237] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610330624 HTTP/1.1" 200 74174
+[2020-06-08 17:58:53,238] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610330626 HTTP/1.1" 200 82068
+[2020-06-08 17:58:53,238] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610330625 HTTP/1.1" 200 96383
+[2020-06-08 17:58:53,239] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610330629 HTTP/1.1" 200 9447
+[2020-06-08 17:58:53,240] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610330628 HTTP/1.1" 200 114691
+[2020-06-08 17:58:53,251] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610330630 HTTP/1.1" 200 6049
+[2020-06-08 17:58:53,252] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610330631 HTTP/1.1" 200 32704
+[2020-06-08 17:58:53,253] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610330632 HTTP/1.1" 200 37336
+[2020-06-08 17:58:53,255] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610330633 HTTP/1.1" 200 74174
+[2020-06-08 17:58:53,267] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610330634 HTTP/1.1" 200 96383
+[2020-06-08 17:58:53,267] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610330635 HTTP/1.1" 200 82068
+[2020-06-08 17:58:53,274] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610330639 HTTP/1.1" 200 6049
+[2020-06-08 17:58:53,276] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610330636 HTTP/1.1" 200 28392
+[2020-06-08 17:58:53,277] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610330638 HTTP/1.1" 200 9447
+[2020-06-08 17:58:53,278] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610330640 HTTP/1.1" 200 32704
+[2020-06-08 17:58:53,278] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610330641 HTTP/1.1" 200 37336
+[2020-06-08 17:58:53,279] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610330637 HTTP/1.1" 200 114691
+[2020-06-08 17:58:53,287] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610330642 HTTP/1.1" 200 74174
+[2020-06-08 17:58:54,329] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:54,351] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:54,356] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610333328 HTTP/1.1" 200 96383
+[2020-06-08 17:58:54,369] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610333329 HTTP/1.1" 200 82068
+[2020-06-08 17:58:54,378] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:54,379] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610333330 HTTP/1.1" 200 28392
+[2020-06-08 17:58:54,388] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610333331 HTTP/1.1" 200 114691
+[2020-06-08 17:58:54,402] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610333332 HTTP/1.1" 200 9447
+[2020-06-08 17:58:54,407] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:54,409] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610333333 HTTP/1.1" 200 6049
+[2020-06-08 17:58:54,417] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610333334 HTTP/1.1" 200 32704
+[2020-06-08 17:58:54,424] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:54,425] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610333335 HTTP/1.1" 200 37336
+[2020-06-08 17:58:54,433] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610333336 HTTP/1.1" 200 74174
+[2020-06-08 17:58:54,451] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:54,466] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610333337 HTTP/1.1" 200 96383
+[2020-06-08 17:58:54,480] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610333338 HTTP/1.1" 200 82068
+[2020-06-08 17:58:54,490] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610333339 HTTP/1.1" 200 28392
+[2020-06-08 17:58:54,490] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:54,500] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610333340 HTTP/1.1" 200 114691
+[2020-06-08 17:58:54,507] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610333341 HTTP/1.1" 200 9447
+[2020-06-08 17:58:54,512] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610333342 HTTP/1.1" 200 6049
+[2020-06-08 17:58:54,518] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 89345
+[2020-06-08 17:58:54,520] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610333343 HTTP/1.1" 200 32704
+[2020-06-08 17:58:54,529] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610333344 HTTP/1.1" 200 37336
+[2020-06-08 17:58:54,534] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610333345 HTTP/1.1" 200 74174
+[2020-06-08 17:58:54,555] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610333346 HTTP/1.1" 200 96383
+[2020-06-08 17:58:54,562] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610333347 HTTP/1.1" 200 82068
+[2020-06-08 17:58:54,569] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610333348 HTTP/1.1" 200 28392
+[2020-06-08 17:58:54,575] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610333349 HTTP/1.1" 200 114691
+[2020-06-08 17:58:54,582] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610333350 HTTP/1.1" 200 9447
+[2020-06-08 17:58:54,587] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610333351 HTTP/1.1" 200 6049
+[2020-06-08 17:58:54,593] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610333352 HTTP/1.1" 200 32704
+[2020-06-08 17:58:54,598] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610333353 HTTP/1.1" 200 37336
+[2020-06-08 17:58:54,604] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610333354 HTTP/1.1" 200 74174
+[2020-06-08 17:58:54,631] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610333355 HTTP/1.1" 200 96383
+[2020-06-08 17:58:54,639] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610333356 HTTP/1.1" 200 82068
+[2020-06-08 17:58:54,645] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610333357 HTTP/1.1" 200 28392
+[2020-06-08 17:58:54,652] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610333358 HTTP/1.1" 200 114691
+[2020-06-08 17:58:54,658] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610333359 HTTP/1.1" 200 9447
+[2020-06-08 17:58:54,663] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610333360 HTTP/1.1" 200 6049
+[2020-06-08 17:58:54,668] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610333361 HTTP/1.1" 200 32704
+[2020-06-08 17:58:54,674] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610333362 HTTP/1.1" 200 37336
+[2020-06-08 17:58:54,680] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610333363 HTTP/1.1" 200 74174
+[2020-06-08 17:58:54,708] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610333364 HTTP/1.1" 200 96383
+[2020-06-08 17:58:54,716] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610333365 HTTP/1.1" 200 82068
+[2020-06-08 17:58:54,721] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610333366 HTTP/1.1" 200 28392
+[2020-06-08 17:58:54,727] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610333367 HTTP/1.1" 200 114691
+[2020-06-08 17:58:54,733] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610333368 HTTP/1.1" 200 9447
+[2020-06-08 17:58:54,738] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610333369 HTTP/1.1" 200 6049
+[2020-06-08 17:58:54,743] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610333370 HTTP/1.1" 200 32704
+[2020-06-08 17:58:54,748] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610333371 HTTP/1.1" 200 37336
+[2020-06-08 17:58:54,753] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610333372 HTTP/1.1" 200 74174
+[2020-06-08 17:58:54,800] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610333373 HTTP/1.1" 200 96383
+[2020-06-08 17:58:54,815] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610333374 HTTP/1.1" 200 82068
+[2020-06-08 17:58:54,822] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610333375 HTTP/1.1" 200 28392
+[2020-06-08 17:58:54,827] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610333376 HTTP/1.1" 200 114691
+[2020-06-08 17:58:54,834] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610333377 HTTP/1.1" 200 9447
+[2020-06-08 17:58:54,838] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610333378 HTTP/1.1" 200 6049
+[2020-06-08 17:58:54,844] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610333379 HTTP/1.1" 200 32704
+[2020-06-08 17:58:54,850] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610333380 HTTP/1.1" 200 37336
+[2020-06-08 17:58:54,855] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610333381 HTTP/1.1" 200 74174
+[2020-06-08 17:58:54,878] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610333382 HTTP/1.1" 200 96383
+[2020-06-08 17:58:54,888] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610333383 HTTP/1.1" 200 82068
+[2020-06-08 17:58:54,894] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610333384 HTTP/1.1" 200 28392
+[2020-06-08 17:58:54,900] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610333385 HTTP/1.1" 200 114691
+[2020-06-08 17:58:54,907] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610333386 HTTP/1.1" 200 9447
+[2020-06-08 17:58:54,912] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610333387 HTTP/1.1" 200 6049
+[2020-06-08 17:58:54,917] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610333388 HTTP/1.1" 200 32704
+[2020-06-08 17:58:54,922] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610333389 HTTP/1.1" 200 37336
+[2020-06-08 17:58:54,927] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610333390 HTTP/1.1" 200 74174
+[2020-06-08 17:58:54,962] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610333391 HTTP/1.1" 200 96383
+[2020-06-08 17:58:54,971] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610333392 HTTP/1.1" 200 82068
+[2020-06-08 17:58:54,977] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610333393 HTTP/1.1" 200 28392
+[2020-06-08 17:58:54,984] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610333394 HTTP/1.1" 200 114691
+[2020-06-08 17:58:54,992] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610333395 HTTP/1.1" 200 9447
+[2020-06-08 17:58:54,998] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610333396 HTTP/1.1" 200 6049
+[2020-06-08 17:58:55,003] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610333397 HTTP/1.1" 200 32704
+[2020-06-08 17:58:55,009] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610333398 HTTP/1.1" 200 37336
+[2020-06-08 17:58:55,014] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610333399 HTTP/1.1" 200 74174
+[2020-06-08 17:59:12,191] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 15551
+[2020-06-08 17:59:12,317] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:59:14,173] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin/ HTTP/1.1" 200 49630
+[2020-06-08 17:59:14,187] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610352268 HTTP/1.1" 200 96383
+[2020-06-08 17:59:14,190] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610352269 HTTP/1.1" 200 82068
+[2020-06-08 17:59:14,195] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610352272 HTTP/1.1" 200 9447
+[2020-06-08 17:59:14,196] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610352273 HTTP/1.1" 200 6049
+[2020-06-08 17:59:14,199] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610352270 HTTP/1.1" 200 28392
+[2020-06-08 17:59:14,200] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610352274 HTTP/1.1" 200 32704
+[2020-06-08 17:59:14,201] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610352271 HTTP/1.1" 200 114691
+[2020-06-08 17:59:14,203] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610352275 HTTP/1.1" 200 37336
+[2020-06-08 17:59:14,204] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610352276 HTTP/1.1" 200 74174
+[2020-06-08 17:59:15,160] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 87337
+[2020-06-08 17:59:15,169] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 87337
+[2020-06-08 17:59:15,176] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610354205 HTTP/1.1" 200 96383
+[2020-06-08 17:59:15,189] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610354206 HTTP/1.1" 200 82068
+[2020-06-08 17:59:15,196] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610354207 HTTP/1.1" 200 28392
+[2020-06-08 17:59:15,202] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610354208 HTTP/1.1" 200 114691
+[2020-06-08 17:59:15,208] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610354209 HTTP/1.1" 200 9447
+[2020-06-08 17:59:15,213] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610354210 HTTP/1.1" 200 6049
+[2020-06-08 17:59:15,218] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610354211 HTTP/1.1" 200 32704
+[2020-06-08 17:59:15,224] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610354212 HTTP/1.1" 200 37336
+[2020-06-08 17:59:15,230] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610354213 HTTP/1.1" 200 74174
+[2020-06-08 17:59:15,258] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610354214 HTTP/1.1" 200 96383
+[2020-06-08 17:59:15,272] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610354215 HTTP/1.1" 200 82068
+[2020-06-08 17:59:15,278] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610354216 HTTP/1.1" 200 28392
+[2020-06-08 17:59:15,284] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610354217 HTTP/1.1" 200 114691
+[2020-06-08 17:59:15,290] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610354218 HTTP/1.1" 200 9447
+[2020-06-08 17:59:15,296] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610354219 HTTP/1.1" 200 6049
+[2020-06-08 17:59:15,300] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610354220 HTTP/1.1" 200 32704
+[2020-06-08 17:59:15,306] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610354221 HTTP/1.1" 200 37336
+[2020-06-08 17:59:15,312] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610354222 HTTP/1.1" 200 74174
+[2020-06-08 17:59:21,390] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /relay/ HTTP/1.1" 200 15551
+[2020-06-08 17:59:21,471] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-06-08 17:59:22,853] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /IPwinUpload/IPwin_2/ HTTP/1.1" 200 10616
+[2020-06-08 17:59:22,876] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610361444 HTTP/1.1" 200 9447
+[2020-06-08 17:59:22,877] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610361445 HTTP/1.1" 200 6049
+[2020-06-08 17:59:22,878] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610361442 HTTP/1.1" 200 28392
+[2020-06-08 17:59:22,879] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610361441 HTTP/1.1" 200 82068
+[2020-06-08 17:59:22,880] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610361440 HTTP/1.1" 200 96383
+[2020-06-08 17:59:22,880] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610361443 HTTP/1.1" 200 114691
+[2020-06-08 17:59:22,881] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610361446 HTTP/1.1" 200 32704
+[2020-06-08 17:59:22,885] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610361447 HTTP/1.1" 200 37336
+[2020-06-08 17:59:22,886] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610361448 HTTP/1.1" 200 74174
+[2020-06-08 17:59:24,028] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 21435
+[2020-06-08 17:59:24,036] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin_2/ HTTP/1.1" 200 21435
+[2020-06-08 17:59:24,038] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610362890 HTTP/1.1" 200 96383
+[2020-06-08 17:59:24,047] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610362891 HTTP/1.1" 200 82068
+[2020-06-08 17:59:24,055] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610362892 HTTP/1.1" 200 28392
+[2020-06-08 17:59:24,061] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610362893 HTTP/1.1" 200 114691
+[2020-06-08 17:59:24,073] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610362894 HTTP/1.1" 200 9447
+[2020-06-08 17:59:24,078] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610362895 HTTP/1.1" 200 6049
+[2020-06-08 17:59:24,083] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610362896 HTTP/1.1" 200 32704
+[2020-06-08 17:59:24,091] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610362897 HTTP/1.1" 200 37336
+[2020-06-08 17:59:24,097] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610362898 HTTP/1.1" 200 74174
+[2020-06-08 17:59:24,291] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js?_=1591610362899 HTTP/1.1" 200 96383
+[2020-06-08 17:59:24,496] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541
+[2020-06-08 17:59:24,496] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js?_=1591610362900 HTTP/1.1" 200 82068
+[2020-06-08 17:59:24,503] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js?_=1591610362901 HTTP/1.1" 200 28392
+[2020-06-08 17:59:24,511] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js?_=1591610362902 HTTP/1.1" 200 114691
+[2020-06-08 17:59:24,528] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js?_=1591610362903 HTTP/1.1" 200 9447
+[2020-06-08 17:59:24,534] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js?_=1591610362904 HTTP/1.1" 200 6049
+[2020-06-08 17:59:24,540] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js?_=1591610362905 HTTP/1.1" 200 32704
+[2020-06-08 17:59:24,553] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js?_=1591610362906 HTTP/1.1" 200 37336
+[2020-06-08 17:59:24,560] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js?_=1591610362907 HTTP/1.1" 200 74174
+[2020-06-08 17:59:24,916] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/show_trunkcircuit/ HTTP/1.1" 200 217541

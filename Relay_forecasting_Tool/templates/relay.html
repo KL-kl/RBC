@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    中继仿真
+{% endblock %}
+{% block css %}
+    <!-- 此处填充css链接 -->
+    {{ block.super }}
+    <style>
+
+        body {
+            position: relative;
+        }
+
+        /*遮罩层显示时body的样式*/
+        .notScroll {
+            overflow: hidden;
+        }
+
+
+        button {
+            color: steelblue;
+            background: #9e9e9e;
+            border: 1px solid lightblue;
+            box-shadow: 0 0 4px wheat;
+            border-radius: 5px;
+            outline: none;
+            font-weight: 400;
+        }
+
+        button:hover {
+            background: grey;
+            color: lightgoldenrodyellow;
+        }
+
+        .border_h4 {
+            height: 30px;
+            border-left: 5px solid steelblue;
+            border-bottom: 1px dashed;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h4 {
+            padding-left: 10px;
+            display: inline;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        #div1, #div2, #div3 {
+            padding-left: 30px;
+        }
+
+        #div1 input[type='text'] {
+            width: 50px;
+        }
+
+        #div2 input[type='text'] {
+            width: 50px;
+        }
+
+        #div3 input[type='text'] {
+            width: 50px;
+        }
+
+        .yw_div {
+            padding-left: 20px;
+        }
+
+        #select {
+            width: 150px;
+            height: 30px;
+            border: 1px solid grey;
+            border-radius: 4px;
+        }
+
+        #_input {
+            width: 120px;
+            height: 30px;
+            border-radius: 4px 0 0 4px;
+            margin-left: -154px;
+        }
+
+        #search_node1 {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            padding: 6px 10px;
+            color: white;
+            border: #428bca solid 1px;
+            background-color: #428bca;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        #search_node1:hover {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            padding: 6px 10px;
+            color: white;
+            border: #2a6496 solid 1px;
+            background-color: steelblue;
+
+        }
+
+        #res1 {
+            width: 200px;
+            height: 40px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            float: left;
+        }
+
+        #node1 {
+            width: 185px;
+            height: 40px;
+            border-radius: 4px 0 0 4px;
+            margin-left: -204px;
+        }
+
+        .datagrid-mask {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        {#opacity: .5;#}{#filter: alpha(opacity=30);#}{#background-color: #172b4d;#} background: rgba(23, 43, 77, 0.45);
+            display: none;
+
+        }
+
+        .datagrid-mask-msg {
+            position: absolute;
+            margin-top: -60px;
+            padding: 12px 15px 10px 30px;
+            width: auto;
+            height: 16px;
+            line-height: 16px;
+            display: none;
+
+        }
+
+        .img1 {
+            vertical-align: middle;
+        }
+
+
+    </style>
+{% endblock %}
+{% block content %}
+    <!-- 此处填充content链接 -->
+    <div class="div_right">
+        <h1>
+            <small>&nbsp;&nbsp;&nbsp;中继路由仿真计算平台</small>
+            <hr>
+        </h1>
+
+        <h4 style="padding-left: 30px">
+            <strong>使用指南：</strong><br>
+            <ul class="no">
+                <li>1.可以在本页点击需要下载需要的metric表模板</li>
+                <li>2.在左侧菜单栏中的中继仿真模型下拉菜单中选择模型，填写并上传需求Excel表等</li>
+                <li>3.检查需求是否完整，完整之后提交</li>
+                <li>4.如需导出结果表，请在左侧菜单中的导出菜单中输入自定义导出表的名称，点击导出；导出表是通过浏览器下载的</li>
+                <li>提示：因为需要计算，请耐心等待结果</li>
+            </ul>
+
+        </h4>
+        <hr>
+
+        <div id="models" style="margin-top:20px;padding-left: 20px">
+            <h4>模板下载</h4>
+            <div style="padding-left: 20px" id="ip_model">
+                <h4>IP专网模板:</h4>
+                <form enctype="multipart/form-data" action="{% url 'downloadModel:downloadTest1' %}" method="post">
+                    {% csrf_token %}
+                    <label>metric:</label>
+                    <input type="text" name="filename" placeholder="请输入自定义文件名" value="">
+                    <input type="submit" value="点击下载"/>
+                </form>
+                <form enctype="multipart/form-data" action="{% url 'downloadModel:downloadTest2' %}" method="post">
+                    {% csrf_token %}
+                    <label>传输距离:</label>
+                    <input type="text" name="filename" placeholder="请输入自定义文件名" value="">
+                    <input type="submit" value="点击下载"/>
+                </form>
+            </div>
+            <div style="padding-left: 20px" id="ip_model">
+                <h4>CMNET网模板:</h4>
+                <form enctype="multipart/form-data" action="{% url 'downloadModel:downloadTest3' %}" method="post">
+                    {% csrf_token %}
+                    <label>metric:</label>
+                    <input type="text" name="filename" placeholder="请输入自定义文件名" value="">
+                    <input type="submit" value="点击下载"/>
+                </form>
+                <form enctype="multipart/form-data" action="{% url 'downloadModel:downloadTest4' %}" method="post">
+                    {% csrf_token %}
+                    <label>传输距离:</label>
+                    <input type="text" name="filename" placeholder="请输入自定义文件名" value="">
+                    <input type="submit" value="点击下载"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

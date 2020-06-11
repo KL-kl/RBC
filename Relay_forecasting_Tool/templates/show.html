@@ -1,0 +1,176 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>表格</title>
+
+    <link REL="SHORTCUT ICON" HREF="{% static "images/favicon.ico" %}"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+    <script type="text/javascript" src="{% static 'js/jQuery/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style>
+        .panel-group {
+            max-height: 770px;
+            overflow: hidden;
+        }
+        .leftMenu {
+            margin: 10px;
+            margin-top: 5px;
+        }
+
+        .leftMenu .panel-heading {
+            font-size: 14px;
+            padding-left: 20px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            color: white;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /*转成手形图标*/
+        .leftMenu .panel-heading span {
+            position: absolute;
+            right: 10px;
+            top: 12px;
+        }
+
+        .leftMenu .menu-item-left {
+            padding: 2px;
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 6px;
+        }
+
+        .leftMenu .menu-item-left:hover {
+            background: #C4E3F3;
+            border: 1px solid #1E90FF;
+        }
+    </style>
+</head>
+
+<body>
+<div class="row">
+    <div class="col-md-2">
+        <div class="panel-group table-responsive" role="tablist">
+            <div class="panel panel-primary leftMenu">
+                <!-- 利用data-target指定要折叠的分组列表 -->
+                <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse"
+                     data-target="#collapseListGroup1" role="tab">
+                    <h4 class="panel-title">
+                        中继仿真模型
+                        <span class="glyphicon glyphicon-chevron-up right"></span>
+                    </h4>
+                </div>
+                <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel"
+                     aria-labelledby="collapseListGroupHeading1">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <!-- 利用data-target指定URL -->
+                            <button class="menu-item-left myLeftMenu" data="{% url 'IPwinUpload:IPwin' %}">
+                                <span class="glyphicon glyphicon-triangle-right"></span>IP专网
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="menu-item-left myLeftMenu" data="{% url 'CMNETwinUpload:CMNETwin' %}">
+                                <span class="glyphicon glyphicon-triangle-right"></span>CMNET网
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="menu-item-left myLeftMenu" data="{% url 'CMNETwinUpload:show_progress1' %}">
+                                <span class="glyphicon glyphicon-triangle-right"></span>测试
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div><!--panel end-->
+            <div class="panel panel-primary leftMenu">
+                <div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse"
+                     data-target="#collapseListGroup2" role="tab">
+                    <h4 class="panel-title">
+                        分组2
+                        <span class="glyphicon glyphicon-chevron-down right"></span>
+                    </h4>
+                </div>
+                <div id="collapseListGroup2" class="panel-collapse collapse in" role="tabpanel"
+                     aria-labelledby="collapseListGroupHeading2">
+                    <ul class="list-group">
+
+                        <li class="list-group-item">
+                            <button class="menu-item-left myLeftMenu" data="{% url 'IPwinUpload:IPwin_2' %}">
+                                <span class="glyphicon glyphicon-triangle-right"></span>IP专网
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="menu-item-left myLeftMenu" data="{% url 'CMNETwinUpload:CMNETwin_2' %}">
+                                <span class="glyphicon glyphicon-triangle-right"></span>CMNET网
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10" id="content">
+        内容
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(".panel-heading").click(function (e) {
+            /*切换折叠指示图标*/
+            $(this).find("span").toggleClass("glyphicon-chevron-down");
+            $(this).find("span").toggleClass("glyphicon-chevron-up");
+            //var obj = $("#collapseListGroup1");
+            //obj.toggleClass("panel-collapse collapse");
+            //obj.toggleClass("panel-collapse collapse in");
+
+        });
+
+
+        $("#collapseListGroupHeading1").click(function (e) {
+            /*切换折叠指示图标*/
+            var obj = $("#collapseListGroup1");
+            obj.toggleClass("panel-collapse collapse");
+            obj.toggleClass("panel-collapse collapse in");
+
+
+        });
+
+        $("#collapseListGroupHeading2").click(function (e) {
+            /*切换折叠指示图标*/
+            var obj = $("#collapseListGroup2");
+            obj.toggleClass("panel-collapse collapse");
+            obj.toggleClass("panel-collapse collapse in");
+
+
+        });
+        $('.myLeftMenu').click(function (e) {
+
+        var url = $(this).attr('data');
+        //  console.log(url);
+        $('#content').load(url);
+    });
+    });
+
+</script>
+</body>
+
+</html>

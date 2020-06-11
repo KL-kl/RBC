@@ -1,0 +1,1465 @@
+{% load staticfiles %}
+{#{% block title %}#}
+{#    CMNET网工程#}
+{#{% endblock %}#}
+
+{% block css %}
+    <!-- 此处填充css链接 -->
+    <style>
+
+
+        body {
+            position: relative;
+        }
+
+        /*遮罩层显示时body的样式*/
+        .notScroll {
+            overflow: hidden;
+        }
+
+        .wrap {
+            padding-left: 30px;
+            position: relative
+        }
+
+        .project {
+            width: 800px;
+        }
+
+        .back_to_top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 42px;
+            height: 42px;
+            background-color: white;
+            border: 1px solid lightsteelblue;
+        }
+
+        .back_to_top:hover {
+            background-color: lightsteelblue;
+
+        }
+
+        .border_h4 {
+            height: 30px;
+            border-left: 5px solid steelblue;
+            border-bottom: 1px dashed;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        h4 {
+            padding-left: 10px;
+            display: inline;
+            height: 30px;
+            line-height: 30px;
+        }
+
+
+        #div1, #div2, #div3 {
+            padding-left: 30px;
+        }
+
+        #div1 input[type='text'] {
+            width: 50px;
+        }
+
+        #div2 input[type='text'] {
+            width: 50px;
+        }
+
+        #div3 input[type='text'] {
+            width: 50px;
+        }
+
+        .yw_div {
+            padding-left: 20px;
+        }
+
+        #select {
+            width: 150px;
+            height: 30px;
+            border: 1px solid grey;
+            border-radius: 4px;
+        }
+
+        #_input {
+            width: 120px;
+            height: 30px;
+            border-radius: 4px 0 0 4px;
+            margin-left: -154px;
+        }
+
+        #search_node1 {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            padding: 6px 10px;
+            color: white;
+            border: #428bca solid 1px;
+            background-color: #428bca;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        #search_node1:hover {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            padding: 6px 10px;
+            color: white;
+            border: #2a6496 solid 1px;
+            background-color: steelblue;
+
+        }
+
+        #res1 {
+            width: 200px;
+            height: 40px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            float: left;
+        }
+
+        #node1 {
+            width: 185px;
+            height: 40px;
+            border-radius: 4px 0 0 4px;
+            margin-left: -204px;
+        }
+
+        .datagrid-mask {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        {#opacity: .5;#}{#filter: alpha(opacity=30);#}{#background-color: #172b4d;#} background: rgba(23, 43, 77, 0.45);
+            display: none;
+
+        }
+
+        .datagrid-mask-msg {
+            position: absolute;
+            margin-top: -60px;
+            padding: 12px 15px 10px 30px;
+            width: auto;
+            height: 16px;
+            line-height: 16px;
+            display: none;
+
+        }
+
+        .img1 {
+            vertical-align: middle;
+        }
+
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <!-- 此处填充content链接 -->
+    <div id="box" data-target="#myNavbar" data-offset="30">
+        <nav aria-label="breadcrumb" id="myNavbar">
+            <ol class="breadcrumb">
+                <li><a style="color: cadetblue" href="{% url 'index' %}">首页</a></li>
+                <li aria-current="page">CMNET骨干网工程</li>
+                <li><a style="color: #0c5460" href="#d1">项目信息</a></li>
+                <li><a style="color: #0c5460" href="#d2">Metric信息</a></li>
+                <li><a style="color: #0c5460" href="#d3">业务需求信息</a></li>
+                <li><a style="color: #0c5460" href="#d4">故障轮巡</a></li>
+                <li><a style="color: #0c5460" href="#d5">中继电路</a></li>
+            </ol>
+        </nav>
+        <div class="wrap">
+            <div class="project">
+                <div id="d1">
+                    <div class="border_h4">
+                        <h4>项目信息</h4>
+                    </div>
+                    <div class="panel-body" style="padding-left: 20px">
+                        <form action="" role="form" method="post"
+                              enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="pro_name">工程名称:</label>
+                                <input type="text" class="form-control" name="pro_name"
+                                       value="CMNET骨干网XX期工程"
+                                       id="pro_name"/>
+                                <p class="help-block">
+                                    例：中国移动互联网（CMNet）骨干网XX期工程----简称：CMNET骨干网XX期工程
+                                </p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="plane_name">可选平面:</label>
+                                <input type="radio" name="pm" value="N1">平面一
+                                <input type="radio" name="pm" value="N2">平面二
+                            </div>
+
+                            <div class="form-group">
+                                <label for="node_file">节点信息上传</label><br>
+                                <input style="display: inline-block" type="file" id="node_file" name="node_file"/>
+                                <input id="node_btn" type="submit" value="上传"/>
+                            </div>
+                        </form>
+                        <form action="{% url 'CMNETwinUpload:upload_newCfile' %}" role="form" method="post"
+                              enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <label for="node_file">节点信息更新上传</label><br>
+                            <input style="display: inline-block" type="file" id="node_file2" name="node_file2"/>
+                            <input id="node_btn2" type="submit" value="上传"/>
+                        </form>
+                    </div>
+                </div>
+                <div id="d2">
+                    <div class="border_h4">
+                        <h4>Metric信息</h4>
+                    </div>
+                    <p class="audi" style="padding-left: 20px">
+                        <input type="radio" value="1" name="metric">直接上传Metric表
+                        <input type="radio" value="2" name="metric">根据计算得到metric
+                    </p>
+                    <div id="m1" style="padding-left: 20px;display: none">
+                        <form action="" method="post" role="form"
+                              enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <input style="display: inline-block" type="file" id="metric_file" name="metric_file">
+                            <input id="metric1" type="submit" value="上传"/>
+                        </form>
+
+                    </div>
+                    <div id="m2" style="padding-left: 20px;display: none">
+                        <div class="container">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Metric
+                                计算方式1--根据链路角色+传输距离计算
+                            </button>
+                            <!--  定义模态框触发器，此处为按钮触发  -->
+
+                            <form method="post" action="" class="form-horizontal" role="form" id="myForm"
+                                  enctype="multipart/form-data" onsubmit="return ">
+                                {% csrf_token %}
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                     aria-labelledby="myModalLabel"
+                                     aria-hidden="true">
+                                    <!--  定义模态框，过渡效果为淡入，id为myModal,tabindex=-1可以禁用使用tab切换，aria-labelledby用于引用模态框的标题，aria-hidden=true保持模态框在触发前窗口不可见  -->
+                                    <div class="modal-dialog modal-lg">
+                                        <!--  显示模态框对话框模型（若不写下一个div则没有颜色）  -->
+                                        <div class="modal-content">
+                                            <!--  显示模态框白色背景，所有内容都写在这个div里面  -->
+
+                                            <div class="btn-info modal-header">
+                                                <!--  模态框标题  -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <!--  关闭按钮  -->
+                                                <h4>Metric 计算方式1--根据链路角色+传输距离计算</h4>
+                                                <!--  标题内容  -->
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <!--  模态框内容，我在此处添加一个表单 -->
+                                                <form class="form-horizontal" role="form">
+                                                    <div id="div1">
+                                                        <label style="font-size: 16px">导入传输距离表：</label>
+                                                        <input type="file" id="distance_file" name="distance_file">
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-c间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hx_js" name="hx_js"
+                                                                                 value="1500"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-a至BB-c间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="lhx_hx" name="lhx_hx"
+                                                                                 value="3000"/>＋传输距离
+                                                                    / 传输距离Metric折算系数<input type="text" id="lhx_hx_zs"
+                                                                                           name="lhx_hx_zs"
+                                                                                           value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC至骨干核心路由器BB-c间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_hx" name="hj_hx"
+                                                                                 value="3000"/>＋传输距离
+                                                                    / 传输距离Metric折算系数<input type="text" id="hj_hx_zs"
+                                                                                           name="hj_hx_zs"
+                                                                                           value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-a间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="lhx_js" name="lhx_js"
+                                                                                 value="3000"/>＋传输距离
+                                                                    / 传输距离Metric折算系数<input type="text" id="lhx_js_zs"
+                                                                                           name="lhx_js_zs"
+                                                                                           value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC至骨干核心路由器BB-a间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_lhx" name="hj_lhx"
+                                                                                 value="3000"/>＋传输距离
+                                                                    / 传输距离Metric折算系数<input type="text" id="hj_lhx_zs"
+                                                                                           name="hj_lhx_zs"
+                                                                                           value="3">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_js" name="hj_js"
+                                                                                 value="3000"/>＋传输距离
+                                                                    / 传输距离Metric折算系数<input type="text" id="hj_js_zs"
+                                                                                           name="hj_js_zs"
+                                                                                           value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干核心路由器BB-c节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hx_js_2" name="hx_js_2"
+                                                                                 value="200">＋<input type="text"
+                                                                                                     id="hx_zs2"
+                                                                                                     name="hx_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干核心路由器BB-a节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="lhx_js_2"
+                                                                                 name="lhx_js_2"
+                                                                                 value="100">＋<input
+                                                                        type="text" id="lhx_zs2" name="lhx_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干汇聚路由器BC节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_js_2" name="hj_js_2"
+                                                                                 value="100">＋<input type="text"
+                                                                                                     id="hj_zs2"
+                                                                                                     name="hj_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <!--  模态框底部样式，一般是提交或者确定按钮 -->
+                                                <button type="button" id="metric2" class="btn btn-primary btn-small">确定
+                                                </button>
+                                                <button type="button" class="btn btn-primary btn-small"
+                                                        data-dismiss="modal">
+                                                    取消
+                                                </button>
+                                                <a href="{% url 'CMNETwinUpload:down_metric1' %}"
+                                                   class="btn btn-primary btn-small">导出</a>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                    </div>
+                                </div> <!-- /.modal -->
+                            </form>
+                        </div>
+                        <div class="container">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal_2">Metric
+                                计算方式2--根据传输距离计算
+                            </button>
+
+                            <!--  定义模态框触发器，此处为按钮触发  -->
+
+                            <form method="post" action="" enctype="multipart/form-data"
+                                  class="form-horizontal" role="form" id="myForm2" onsubmit="return ">
+                                {% csrf_token %}
+                                <div class="modal fade" id="myModal_2" tabindex="-1" role="dialog"
+                                     aria-labelledby="myModalLabel"
+                                     aria-hidden="true">
+                                    <!--  定义模态框，过渡效果为淡入，id为myModal,tabindex=-1可以禁用使用tab切换，aria-labelledby用于引用模态框的标题，aria-hidden=true保持模态框在触发前窗口不可见  -->
+                                    <div class="modal-dialog modal-lg">
+                                        <!--  显示模态框对话框模型（若不写下一个div则没有颜色）  -->
+                                        <div class="modal-content">
+                                            <!--  显示模态框白色背景，所有内容都写在这个div里面  -->
+
+                                            <div class="btn-info modal-header">
+                                                <!--  模态框标题  -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <!--  关闭按钮  -->
+                                                <h4>Metric 计算方式2--根据传输距离计算</h4>
+                                                <!--  标题内容  -->
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <!--  模态框内容，我在此处添加一个表单 -->
+                                                <form class="form-horizontal" role="form">
+                                                    <div id="div2">
+                                                        <label style="font-size: 16px">导入传输距离表：</label>
+                                                        <input type="file" id="distance_file2" name="distance_file2">
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-c间链路：</label><br>
+                                                                    传输距离 / 传输距离Metric折算系数<input type="text"
+                                                                                                id="hx_js2_zs"
+                                                                                                name="hx_js2_zs"
+                                                                                                value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-a至BB-c间链路：</label><br>
+                                                                    传输距离 / 传输距离Metric折算系数<input type="text"
+                                                                                                id="lhx_hx2_zs"
+                                                                                                name="lhx_hx2_zs"
+                                                                                                value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC至骨干核心路由器BB-c间链路：</label><br>
+                                                                    传输距离 / 传输距离Metric折算系数<input type="text"
+                                                                                                id="hj_hx2_zs"
+                                                                                                name="hj_hx2_zs"
+                                                                                                value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-a间链路：</label><br>
+                                                                    传输距离 / 传输距离Metric折算系数<input type="text"
+                                                                                                id="lhx_js2_zs"
+                                                                                                name="lhx_js2_zs"
+                                                                                                value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC至骨干核心路由器BB-a间链路：</label><br>
+                                                                    传输距离 / 传输距离Metric折算系数<input type="text"
+                                                                                                id="hj_lhx2_zs"
+                                                                                                name="hj_lhx2_zs"
+                                                                                                value="3">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC间链路：</label><br>
+                                                                    传输距离 / 传输距离Metric折算系数<input type="text"
+                                                                                                id="hj_js2_zs"
+                                                                                                name="hj_js2_zs"
+                                                                                                value="3">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干核心路由器BB-c节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hx_js2_2"
+                                                                                 name="hx_js2_2"
+                                                                                 value="200">＋<input
+                                                                        type="text" id="hx_js2_zs2" name="hx_js2_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干核心路由器BB-a节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="lhx_js2_2"
+                                                                                 name="lhx_js2_2"
+                                                                                 value="100">＋<input type="text"
+                                                                                                     id="lhx_js2_zs2"
+                                                                                                     name="lhx_js2_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干汇聚路由器BC节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_js2_2"
+                                                                                 name="hj_js2_2"
+                                                                                 value="100">＋<input
+                                                                        type="text" id="hj_js2_zs2" name="hj_js2_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <!--  模态框底部样式，一般是提交或者确定按钮 -->
+                                                <button type="button" id="metric3" class="btn btn-primary btn-small">确定
+                                                </button>
+                                                <button type="button" class="btn btn-primary btn-small"
+                                                        data-dismiss="modal">
+                                                    取消
+                                                </button>
+                                                <a href="{% url 'CMNETwinUpload:down_metric1' %}"
+                                                   class="btn btn-primary btn-small">导出</a>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                    </div>
+                                </div> <!-- /.modal -->
+                            </form>
+                        </div>
+                        <div class="container">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal_3">Metric
+                                计算方式3--根据链路角色计算
+                            </button>
+
+                            <!--  定义模态框触发器，此处为按钮触发  -->
+
+                            <form method="post" action="" enctype="multipart/form-data"
+                                  class="form-horizontal" role="form" id="myForm3" onsubmit="return ">
+                                {% csrf_token %}
+                                <div class="modal fade" id="myModal_3" tabindex="-1" role="dialog"
+                                     aria-labelledby="myModalLabel"
+                                     aria-hidden="true">
+                                    <!--  定义模态框，过渡效果为淡入，id为myModal,tabindex=-1可以禁用使用tab切换，aria-labelledby用于引用模态框的标题，aria-hidden=true保持模态框在触发前窗口不可见  -->
+                                    <div class="modal-dialog modal-lg">
+                                        <!--  显示模态框对话框模型（若不写下一个div则没有颜色）  -->
+                                        <div class="modal-content">
+                                            <!--  显示模态框白色背景，所有内容都写在这个div里面  -->
+
+                                            <div class="btn-info modal-header">
+                                                <!--  模态框标题  -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;
+                                                </button>
+                                                <!--  关闭按钮  -->
+                                                <h4>Metric 计算方式3--根据链路角色计算</h4>
+                                                <!--  标题内容  -->
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <!--  模态框内容，我在此处添加一个表单 -->
+                                                <form class="form-horizontal" role="form">
+                                                    <div id="div3">
+                                                        <label style="font-size: 16px">导入中继方向表：</label>
+                                                        <input type="file" id="direction_file" name="direction_file">
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-c间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hx_js3" name="hx_js3"
+                                                                                 value="1500"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-a至BB-c间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="lhx_hx3" name="lhx_hx3"
+                                                                                 value="3000"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC至骨干核心路由器BB-c间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_hx3" name="hj_hx3"
+                                                                                 value="3000"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干核心路由器BB-a间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="lhx_js3" name="lhx_js3"
+                                                                                 value="3000"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC至骨干核心路由器BB-a间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_lhx3" name="hj_lhx3"
+                                                                                 value="3000"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">骨干汇聚路由器BC间链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_js3" name="hj_js3"
+                                                                                 value="3000"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干核心路由器BB-c节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hx_js3_2"
+                                                                                 name="hx_js3_2"
+                                                                                 value="200">＋<input
+                                                                        type="text" id="hx_js3_zs2" name="hx_js3_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干核心路由器BB-a节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="lhx_js3_2"
+                                                                                 name="lhx_js3_2"
+                                                                                 value="100">＋<input type="text"
+                                                                                                     id="lhx_js3_zs2"
+                                                                                                     name="lhx_js3_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for=""
+                                                                           class="control-label">同省成对骨干汇聚路由器BC节点间互联链路：</label><br>
+                                                                    链路角色赋值<input type="text" id="hj_js3_2"
+                                                                                 name="hj_js3_2"
+                                                                                 value="100">＋<input
+                                                                        type="text" id="hj_js3_zs2" name="hj_js3_zs2">([1,n]1——n之间的任意正整数)
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <!--  模态框底部样式，一般是提交或者确定按钮 -->
+                                                <button type="button" id="metric4" class="btn btn-primary btn-small">确定
+                                                </button>
+                                                <button type="button" class="btn btn-primary btn-small"
+                                                        data-dismiss="modal">
+                                                    取消
+                                                </button>
+                                                <a href="{% url 'CMNETwinUpload:down_metric1' %}"
+                                                   class="btn btn-primary btn-small">导出</a>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                    </div>
+                                </div> <!-- /.modal -->
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="d3">
+                    <div class="border_h4">
+                        <h4>业务需求信息</h4>
+                    </div>
+                    <div class="yw_div">
+                        <form enctype="multipart/form-data" action="" method="post">
+                            {% csrf_token %}
+                            <label>业务复用系数:</label>
+                            <input style="width: 50px" id="xs1" class="xs1" type="text" name="xs1" value="80"
+                                   \>%<br><br>
+
+
+                            <label>直接上传点到点流量:</label>
+                            <div class="btn_div">
+
+                                <input style="float: left" type="file" id="flowfile">
+
+                                <input id="flow_btn" type="submit" value="上传"/>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <hr>
+
+                    <div class="yw_div">
+                        <form enctype="multipart/form-data" action="" method="post">
+                            {% csrf_token %}
+                            <label>业务复用系数:</label>
+                            <input style="width: 50px" id="xs" class="xs" type="text" name="xs" value="80" \>%<br><br>
+                            <!--
+                            <label>多节点比例:</label>
+                            <div style="width: 500px;">
+                                <table id="mytable" class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>省份</th>
+                                        <th>节点数</th>
+                                        <th>比例</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                            -->
+
+                            <label>业务表导入计算点点互访流量:</label>
+                            <div class="btn_div">
+
+                                <input style="float: left" type="file" id="myfiles" name="myfiles">
+
+                                <input id="filemax_btn" type="submit" value="上传"/>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                </div>
+                <div id="d4">
+                    <div class="border_h4">
+                        <h4>故障轮巡</h4>
+                    </div>
+
+                    <div class="guzhang">
+                        <div class="row" style="margin-left: 20px">
+                            <button class="btn btn-primary btn-small" id="wentai">稳态计算</button>
+                        </div>
+                        <hr>
+                        <div class="row" style="padding-left: 20px">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <label style="padding-left: 20px">节点故障</label>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                    <input name="gz" type="checkbox" value="1">核心(为细分中BB-c)
+                                    <input name="gz" type="checkbox" value="2">类核心(为细分中BB-a)
+                                    <input name="gz" type="checkbox" value="3">全网
+                                    <button class="btn btn-primary btn-small" id="gz_btn">计算</button>
+                                </div>
+                                <p class="help-block" style="padding-left: 20px">
+                                    核心与类核心两个勾选，视为整个核心层故障轮询；两者单个勾选为单个细分层次轮询
+                                </p>
+
+                            </form>
+
+                        </div>
+                        <hr>
+                        <div class="row" id="addgzbtn" style="padding-left: 20px">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <label>链路故障</label>
+                                <form action="" method="post">
+                                    {% csrf_token %}
+                                    <input style="width: 100px" type="text" id="st" placeholder="起始节点" value=""/>
+                                    <input style="width: 100px" type="text" id="en" placeholder="到达节点" value=""/>
+
+                                    <button id="btn1" class="btn btn-primary btn-small">添加</button>
+                                    <button id="btn2" type="button" class="btn btn-primary btn-small"
+                                            data-dismiss="modal">
+                                        计算
+                                    </button>
+                                    <table class="table table-bordered" width="600" id="table1">
+                                        <thead>
+                                        <tr>
+                                            <td>起始</td>
+                                            <td>到达</td>
+                                            <td>操作</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </form>
+
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row" style="margin-left: 20px">
+                            <form action="" role="form" method="post">
+                                <label>故障轮巡计算结果导出</label>
+                                <div class="form-group">
+                                    <input type="text" style="display: inline-block;" class="form-control"
+                                           id="filename1"
+                                           placeholder="请输入关键字">
+                                    <span id="search_node1" onclick="search_node();">搜索</span>
+                                </div>
+                            </form>
+                            <form action="{% url 'CMNETwinUpload:down_route' %}" role="form" method="post">
+                                {% csrf_token %}
+                                <label>选择列表</label>
+                                <div class="form-group">
+                                    <input id="node1" type="text" name="node1" value="">
+
+                                    <select id="res1" onchange="a()">
+
+                                    </select>
+
+                                </div>
+                                <input type="submit" value="点击下载"/>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="d5">
+                    <div class="border_h4">
+                        <h4>中继电路</h4>
+                    </div>
+                    <div style="padding-left: 20px">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <label style="margin-top: 10px;font-size: 18px">链路利用率:</label>
+                            <div class="form-group">
+
+                                <label>BB-c之间：
+                                    <input style="width: 80px" type="text" id="c_c" name="c_c" value="70">%
+                                </label>
+                                <br>
+                                <label>BB-a至BB-c：
+                                    <input style="width: 80px" type="text" id="a_c" name="a_c" value="80">%
+                                </label>
+                                <br>
+                                <label>BC至BB-c：
+                                    <input style="width: 80px" type="text" id="bc_c" name="bc_c" value="80">%
+                                </label>
+                                <br>
+                                <label>BB-a之间：
+                                    <input style="width: 80px" type="text" id="a_a" name="a_a" value="80">%
+                                </label>
+                                <br>
+                                <label>BC至BB-a：
+                                    <input style="width: 80px" type="text" id="bc_a" name="bc_a" value="80">%
+                                </label>
+                                <br>
+                                <label>BC之间：
+                                    <input style="width: 80px" type="text" id="bc_bc" name="bc_bc" value="80">%
+                                </label>
+                                <br>
+                                <label>同省BB-c：
+                                    <input style="width: 80px" type="text" id="bb-c" name="bb-c" value="4">X<input
+                                            style="width: 80px" type="text" id="bandwidth1" name="bandwidth1"
+                                            value="100">GE
+                                </label>
+                                <br>
+                                <label>同省BB-a：
+                                    <input style="width: 80px" type="text" id="bb-a" name="bb-a" value="4">X<input
+                                            style="width: 80px" type="text" id="bandwidth2" name="bandwidth2"
+                                            value="100">GE
+                                </label>
+                                <br>
+                                <label>同省BC：
+                                    <input style="width: 80px" type="text" id="bc" name="bc" value="2">X<input
+                                            style="width: 80px" type="text" id="bandwidth3" name="bandwidth3"
+                                            value="100">GE
+                                </label>
+
+
+                            </div>
+
+                            <label style="margin-top: 10px;font-size: 18px">链路颗粒度:</label>
+                            <div class="form-group">
+
+                                <select name="select_5" id="select" onchange="a()">
+                                    <option value="1">10GPOS</option>
+                                    <option value="2">10GE</option>
+                                    <option value="3">100GE</option>
+                                    <option value="4">400GE</option>
+                                </select>
+                                <input id="_input" type="text" value="">
+
+                            </div>
+
+                            <label style="margin-top: 10px;font-size: 18px">折算系数:</label>
+
+                            <div class="form-group">
+
+                                >= <input type="text" style="width: 80px" id="v1" value="12">个10GE 转换为 1 个100GE <br>
+                                >= <input type="text" style="width: 80px" id="v2" value="2">个100GE 转换为 1 个400GE
+
+                            </div>
+
+                            <hr>
+                            <div class="yw_div">
+                                是否多方案
+                                <input type="radio" name="plan" value="1">是
+                                <input type="radio" name="plan" value="2">否
+                            </div>
+                            <button class="btn btn-primary btn-small" id="link_btn">计算</button>
+                        </form>
+
+                    </div>
+                    <hr>
+
+                    <form action="{% url 'CMNETwinUpload:report_down_load' %}" role="form" method="post">
+                        {% csrf_token %}
+                        <label for="">结果导出：</label>
+                        <input type="submit" value="导出">
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <button class="back_to_top">返回顶部</button>
+    </div>
+{% endblock %}
+
+{% block myjs %}
+    <!-- 此处填充js链接 -->
+
+    <script type="text/javascript">
+
+        {#    回到顶部功能   #}
+        var backButton = $('.back_to_top');
+
+        function backToTop() {
+            $('box').animate({
+                scrollTop: 0
+            }, 800);
+        }
+
+        backButton.on('click', backToTop);
+
+        $(window).on('scroll', function () {/*当滚动条的垂直位置大于浏览器所能看到的页面的那部分的高度时，回到顶部按钮就显示 */
+            if ($(window).scrollTop() > $(window).height())
+                backButton.fadeIn();
+            else
+                backButton.fadeOut();
+        });
+        $(window).trigger('scroll');
+        /*触发滚动事件，避免刷新的时候显示回到顶部按钮*/
+
+        {#   metric计算单选按钮   #}
+        $(".audi").change(function () {
+            var val = $('input:radio[name="metric"]:checked').val();
+            {#console.log(val);#}
+            if (val == 1) {
+                //点击通过后隐藏此模块
+                $("#m1").show();
+                $("#m2").hide();
+            } else if (val == 2) {
+                //点击展示此模块
+                $("#m2").show();
+                $("#m1").hide();
+            }
+        });
+
+        {#   节点信息上传   #}
+        $("#node_btn").click(function (event) {
+            event.preventDefault();//阻止默认提交
+            var formdata = new FormData();
+            formdata.append('pro_name', document.getElementById("pro_name").value);
+            formdata.append('pm', $("input[name='pm']:checked").val());
+            formdata.append('node_file', document.getElementById("node_file").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            {#console.log(formdata);#}
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:upload_Cfile' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                }
+            });
+        });
+
+        {#  直接上传metric表  #}
+        $("#metric1").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('metric_file', document.getElementById("metric_file").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            {#console.log(formdata);#}
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:up_metric1' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+        {#  metric计算原则一：  #}
+        $("#metric2").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('distance_file', document.getElementById("distance_file").files[0]);
+            formdata.append('hx_js', document.getElementById("hx_js").value);
+            formdata.append('lhx_hx', document.getElementById("lhx_hx").value);
+            formdata.append('lhx_hx_zs', document.getElementById("lhx_hx_zs").value);
+            formdata.append('hj_hx', document.getElementById("hj_hx").value);
+            formdata.append('hj_hx_zs', document.getElementById("hj_hx_zs").value);
+            formdata.append('lhx_js', document.getElementById("lhx_js").value);
+            formdata.append('lhx_js_zs', document.getElementById("lhx_js_zs").value);
+            formdata.append('hj_lhx', document.getElementById("hj_lhx").value);
+            formdata.append('hj_lhx_zs', document.getElementById("hj_lhx_zs").value);
+            formdata.append('hj_js', document.getElementById("hj_js").value);
+            formdata.append('hj_js_zs', document.getElementById("hj_js_zs").value);
+            formdata.append('hx_js_2', document.getElementById("hx_js_2").value);
+            formdata.append('hx_zs2', document.getElementById("hx_zs2").value);
+            formdata.append('lhx_js_2', document.getElementById("lhx_js_2").value);
+            formdata.append('lhx_zs2', document.getElementById("lhx_zs2").value);
+            formdata.append('hj_js_2', document.getElementById("hj_js_2").value);
+            formdata.append('hj_zs2', document.getElementById("hj_zs2").value);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            console.log(formdata);
+
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:up_metric2' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+        {#  metric计算原则二：  #}
+        $("#metric3").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('distance_file2', document.getElementById("distance_file2").files[0]);
+            formdata.append('hx_js2_zs', document.getElementById("hx_js2_zs").value);
+            formdata.append('lhx_hx2_zs', document.getElementById("lhx_hx2_zs").value);
+            formdata.append('hj_hx2_zs', document.getElementById("hj_hx2_zs").value);
+            formdata.append('lhx_js2_zs', document.getElementById("lhx_js2_zs").value);
+            formdata.append('hj_lhx2_zs', document.getElementById("hj_lhx2_zs").value);
+            formdata.append('hj_js2_zs', document.getElementById("hj_js2_zs").value);
+            formdata.append('hx_js2_2', document.getElementById("hx_js2_2").value);
+            formdata.append('hx_js2_zs2', document.getElementById("hx_js2_zs2").value);
+            formdata.append('lhx_js2_2', document.getElementById("lhx_js2_2").value);
+            formdata.append('lhx_js2_zs2', document.getElementById("lhx_js2_zs2").value);
+            formdata.append('hj_js2_2', document.getElementById("hj_js2_2").value);
+            formdata.append('hj_js2_zs2', document.getElementById("hj_js2_zs2").value);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:up_metric3' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+        {#  metric计算原则三：  #}
+        $("#metric4").click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('direction_file', document.getElementById("direction_file").files[0]);
+            formdata.append('hx_js3', document.getElementById("hx_js3").value);
+            formdata.append('lhx_hx3', document.getElementById("lhx_hx3").value);
+            formdata.append('hj_hx3', document.getElementById("hj_hx3").value);
+            formdata.append('lhx_js3', document.getElementById("lhx_js3").value);
+            formdata.append('hj_lhx3', document.getElementById("hj_lhx3").value);
+            formdata.append('hj_js3', document.getElementById("hj_js3").value);
+            formdata.append('hx_js3_2', document.getElementById("hx_js3_2").value);
+            formdata.append('hx_js3_zs2', document.getElementById("hx_js3_zs2").value);
+            formdata.append('lhx_js3_2', document.getElementById("lhx_js3_2").value);
+            formdata.append('lhx_js3_zs2', document.getElementById("lhx_js3_zs2").value);
+            formdata.append('hj_js3_2', document.getElementById("hj_js3_2").value);
+            formdata.append('hj_js3_zs2', document.getElementById("hj_js3_zs2").value);
+
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:up_metric4' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+
+        // 直接上传点到点流量
+        $('#flow_btn').click(function (event) {
+            event.preventDefault();
+            var formdata = new FormData();
+            formdata.append('xs1', document.getElementById('xs1').value);
+            formdata.append('flowfile', document.getElementById("flowfile").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+            {#console.log(formdata);#}
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:up_flow' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        alert(res.msg);
+                        {#window.location.href = "{% url 'CMNETwinUpload:show_node' %}";#}
+                    } else if (res.status === 'err') {
+                        alert(res.msg);
+                    }
+                },
+                error: function () {
+                    alert('上传失败！！！')
+                }
+            });
+        });
+
+
+        {#  业务需求上传：  #}
+        //var ratioarr = []; //多节点比例
+
+        $("#filemax_btn").click(function (event) {
+            event.preventDefault();//阻止默认提交
+
+            /*
+            //多节点比例
+            for (var m = 0; m < ($("#mytable tbody").find('tr').length); m++) {
+                var s = {
+                    province: $("#mytable tbody").find('tr').eq(m).find('td').eq(0).text(),
+                    nums: $("#mytable tbody").find('tr').eq(m).find('td').eq(1).text(),
+                    ratio: $("#mytable tbody").find('tr').eq(m).find('td').eq(2).find('input').val()
+                };
+                ratioarr[m] = s
+            }
+
+            if (ratioarr.length <= 0) {
+                alert('请先添加比例！');
+                return false
+            }
+            //打印比例表数据
+            console.log(ratioarr);
+            */
+            var formdata = new FormData();
+            formdata.append('xs', document.getElementById('xs').value);
+            formdata.append('myfiles', document.getElementById("myfiles").files[0]);
+            formdata.append('csrfmiddlewaretoken', $('[name="csrfmiddlewaretoken"]').val());
+
+            //formdata.append('ratioarr', JSON.stringify(ratioarr));
+            //console.log(formdata);
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:ntonflow' %}",
+                type: "post",
+                data: formdata,
+                dataType: 'json',
+                contentType: false, //- 必须false才会自动加上正确的Content-Type
+                processData: false, //- 必须false才会避开jQuery对 formdata 的默认处理,XMLHttpRequest会对 formdata 进行正确的处理
+                beforeSend: function () {
+                    EasyUILoad();
+                    {#console.log("正在进行，请稍候......");#}
+                },
+                success: function (res) {
+                    if (res.status === 'ok') {
+                        dispalyEasyUILoad();
+                        alert(res.msg);
+
+                    } else if (res.status === 'err') {
+                        dispalyEasyUILoad();
+                        alert(res.msg);
+                    }
+                }
+            });
+
+        });
+
+
+        //load
+        function EasyUILoad() {
+
+            $("<div class='datagrid-mask'></div>").css({
+                display: "block",
+                width: "100%",
+                height: "100%",
+            }).appendTo("body");
+            $("<div class='datagrid-mask-msg'></div>").html("<img src='{% static "images/loading3.gif" %}' class='img1' />").appendTo("body").css({
+                display: "block",
+                left: ($('body').outerWidth(true) - 60) / 2 + 'px',
+                top: ($('body').outerHeight(true) - 60) / 2 + 'px',
+
+                color: "write",
+            });
+            /*
+            $('body').bind("touchmove", function (e) {
+                e.preventDefault();
+            });
+            */
+
+            $('body').addClass('notScroll');
+
+        }
+
+        //display Load
+        function dispalyEasyUILoad() {
+            $(".datagrid-mask").remove();
+            $(".datagrid-mask-msg").remove();
+
+            $('body').removeClass('notScroll');
+
+        }
+
+
+        {# 链路故障 #}
+        var arr = [];
+
+        //添加故障链路
+        $("#btn1").click(function (event) {
+            event.preventDefault();
+            if ($("#st").val() == "" || $("#en").val() == "") {
+                alert('添加故障链路不能为空！');
+                return false
+            } else {
+            }
+            var $tr = $("<tr></tr>");
+            var $bt = $("<td><a style='color:blue'>删除</a></td>");
+            var $li1 = "<td>" + $("#st").val() + "</td>";
+            var $li2 = "<td>" + $("#en").val() + "</td>";
+
+            $tr.append($li1, $li2, $bt);
+            //将获取的tr 追加到 table中
+            $('#table1 tbody').append($tr);
+
+            //获取 a 连接的属性
+            $("a").attr("href", "javascript:void(0)");
+            //删除
+            $("a").click(function () {
+                //定义p1 存储 td
+                var p1 = this.parentNode;
+                //定义p2  存储 tr
+                var p2 = p1.parentNode;
+                //移除 tr
+                $(p2).remove();
+                arr = []
+            });
+        });
+
+        //提交故障链路
+        $("#btn2").click(function () {
+            for (var m = 0; m < ($("tbody").find('tr').length); m++) {
+                var s = {
+                    st: $("tbody").find('tr').eq(m).find('td').eq(0).text(),
+                    en: $("tbody").find('tr').eq(m).find('td').eq(1).text(),
+                };
+                arr[m] = s
+            }
+
+            if (arr.length <= 0) {
+                alert('请先添加故障链路！');
+                return false
+            }
+
+            $.ajax({
+                type: 'get',
+                dataType: "json",
+                url: "{% url 'CMNETwinUpload:link_fail' %}",
+                data: {
+                    arr: JSON.stringify(arr),
+                },
+                success: function (res) {
+                    if (res.status == 'ok') {
+                        alert(res.msg)
+                    } else if (res.status == 'err') {
+                        alert(res.msg)
+                    }
+                }
+            })
+        });
+
+        {# 稳态计算 #}
+        $("#wentai").click(function () {
+            EasyUILoad();
+            $.ajax({
+                type: "get",
+                url: "{% url 'CMNETwinUpload:import_excel' %}",// 请求的url地址
+                data: {
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val(),
+                    pro_type: '2',
+                },
+                dataType: "json",//json写了jq会帮我们转换成数组或者对象 他已经用JSON.parse弄好了
+                success: function (res) { // 成功拿到结果放到这个函数 data就是拿到的结果
+
+                    if (res.status == 'ok') {
+                        dispalyEasyUILoad();
+
+                        alert(res.msg, '可以去导出稳态表了')
+                    } else if (res.status == 'fail') {
+                        dispalyEasyUILoad();
+                        alert(res.msg)
+                    }
+                }
+            })
+
+        });
+
+        {# 节点故障计算 #}
+        $("#gz_btn").click(function (event) {
+            event.preventDefault();
+            var arr1 = [];//定义一个数组
+            var arr2 = $("input[name='gz']:checked");//获取多选框的数组
+            $.each(arr2, function () {
+                arr1.push($(this).val());//把多选框数组的value放入自己定义的里面
+            });
+            EasyUILoad();
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:gz' %}",//发送到这
+                type: "post",
+                data: {
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val(),
+                    ids: arr1.join(","),
+                    pro_type: '2',
+                },
+
+                dataType: "json",     //如果后台返回的是字符串这要写上text 如果返回对象或者集合 写json
+                success: function (res) {
+
+                    if (res.status == "ok") {
+                        dispalyEasyUILoad();
+                        alert(res.msg);
+
+                    }
+                    else if (res.status == "fail") {
+                        dispalyEasyUILoad();
+                        alert(res.msg);
+                    }
+
+                }
+            });
+        });
+
+        function search_node() {
+            var val = document.getElementById('filename1').value;
+
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:search_routefile' %}",//后台接收参数的文件地址
+                type: "post",//提交数据的方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                data: {
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val(),
+                    val: val,
+                },
+
+                success: function (result) {
+
+                    if (result.status == 'ok') {
+
+                        $("#res1").find("option").remove();
+
+                        var msg = eval(result.msg);
+
+                        for (var i = 0; i < msg.length; i++) {
+                            $('#res1').append('<option value="' + msg[i] + '">' + msg[i] + '</option>')  // 依次增加选项
+                        }
+                    } else if (result.status == 'fail') {
+                        alert(result.msg);
+                    }
+
+                },
+                error: function () {
+
+                    alert("异常！");
+                }
+            });
+        }
+
+        {# 下拉菜单选项显示在text中 #}
+
+        function a() {
+            $('#_input').val($('#select option:selected').text());
+            $('#node1').val($('#res1 option:selected').text());
+
+        }
+
+        {# 中继计算 #}
+        $('#link_btn').click(function (event) {
+            event.preventDefault();
+            var v1 = document.getElementById('c_c').value;
+            var v2 = document.getElementById('a_c').value;
+            var v3 = document.getElementById('bc_c').value;
+            var v4 = document.getElementById('a_a').value;
+            var v5 = document.getElementById('bc_a').value;
+            var v6 = document.getElementById('bc_bc').value;
+            var v7 = document.getElementById('bb-c').value;
+            var bandwidth1 = document.getElementById('bandwidth1').value;
+            var v8 = document.getElementById('bb-a').value;
+            var bandwidth2 = document.getElementById('bandwidth2').value;
+            var v9 = document.getElementById('bc').value;
+            var bandwidth3 = document.getElementById('bandwidth3').value;
+            var zs1 = document.getElementById('v1').value;
+            var zs2 = document.getElementById('v2').value;
+            var plan = $("input[name='plan']:checked").value;
+            var granularity = document.getElementById('_input').value;
+            EasyUILoad();
+            $.ajax({
+                url: "{% url 'CMNETwinUpload:relay_calculation' %}",//后台接收参数的文件地址
+                type: "post",//提交数据的方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                data: {
+                    csrfmiddlewaretoken: $('[name="csrfmiddlewaretoken"]').val(),
+                    v1: v1,
+                    v2: v2,
+                    v3: v3,
+                    v4: v4,
+                    v5: v5,
+                    v6: v6,
+                    v7: v7,
+                    bandwidth1: bandwidth1,
+                    v8: v8,
+                    bandwidth2: bandwidth2,
+                    v9: v9,
+                    bandwidth3: bandwidth3,
+                    zs1: zs1,
+                    zs2: zs2,
+                    plan: plan,
+                    'granularity': granularity,
+                },
+                success: function (result) {
+
+                    if (result.status == 'ok') {
+                        dispalyEasyUILoad();
+                        alert(result.msg);
+                    }
+
+                },
+                error: function () {
+                    dispalyEasyUILoad();
+                    alert("异常！");
+                }
+            });
+
+        })
+
+    </script>
+{% endblock %}
+

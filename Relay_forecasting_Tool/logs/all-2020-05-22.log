@@ -1,0 +1,252 @@
+[2020-05-22 15:30:20,503] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 302 0
+[2020-05-22 15:30:20,542] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /user/user_login/?next=/ HTTP/1.1" 200 3343
+[2020-05-22 15:30:20,640] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap.min.js HTTP/1.1" 200 28392
+[2020-05-22 15:30:20,641] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.min.js HTTP/1.1" 200 96383
+[2020-05-22 15:30:20,642] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap.min.css HTTP/1.1" 200 121218
+[2020-05-22 15:30:20,726] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/light.png HTTP/1.1" 200 132156
+[2020-05-22 15:30:20,727] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loginbg1.png HTTP/1.1" 200 2834
+[2020-05-22 15:30:20,730] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loginsj.png HTTP/1.1" 200 3018
+[2020-05-22 15:30:20,913] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-05-22 15:30:42,765] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /user/user_login/?next=/ HTTP/1.1" 302 0
+[2020-05-22 15:30:42,810] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 15:30:42,876] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap-table-fixed-columns.css HTTP/1.1" 200 635
+[2020-05-22 15:30:42,877] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/font-change.css HTTP/1.1" 200 1389
+[2020-05-22 15:30:42,877] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap-editable.css HTTP/1.1" 200 21619
+[2020-05-22 15:30:42,877] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/bootstrap-table.min.css HTTP/1.1" 200 8803
+[2020-05-22 15:30:42,877] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/jquery/jquery.datatables.min.css HTTP/1.1" 200 13806
+[2020-05-22 15:30:42,878] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap/font-awesome.min.css HTTP/1.1" 200 32437
+[2020-05-22 15:30:42,896] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-zh-CN.min.js HTTP/1.1" 200 9447
+[2020-05-22 15:30:42,898] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/jquery.datatables.min.js HTTP/1.1" 200 82068
+[2020-05-22 15:30:42,901] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-fixed-columns.js HTTP/1.1" 200 6049
+[2020-05-22 15:30:42,901] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table.min.js HTTP/1.1" 200 114691
+[2020-05-22 15:30:42,902] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-table-export.min.js HTTP/1.1" 200 32704
+[2020-05-22 15:30:42,908] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/jQuery/tableExport.min.js HTTP/1.1" 200 37336
+[2020-05-22 15:30:42,911] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap/bootstrap-editable.min.js HTTP/1.1" 200 74174
+[2020-05-22 15:30:47,561] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 15:31:04,973] [views.py:153] [views:upload_Cfile] [INFO]- 没有存储文件路径，创建新文件
+[2020-05-22 15:31:05,581] [views.py:257] [views:upload_Cfile] [INFO]- 上传成功！！！
+[2020-05-22 15:31:05,581] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/upload_Cfile/ HTTP/1.1" 200 69
+[2020-05-22 15:31:45,692] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 15:32:03,365] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/loading3.gif HTTP/1.1" 200 6750
+[2020-05-22 15:32:07,818] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-05-22 15:33:16,327] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/import_excel/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 1664, in import_excel
+    bandwidth_allocation(pro_type, path1, path2)
+  File "D:\job\Relay_forecasting_Tool\apps\utils\daikuanfenpei.py", line 93, in bandwidth_allocation
+    b2 = xlrd.open_workbook(os.path.join(path, 'CMNET网_点到点流量.xlsx'))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\job\\Relay_forecasting_Tool\\excel\\cmnetwin\\CMNET网_点到点流量.xlsx'
+[2020-05-22 15:33:16,386] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=XCjKllPZMCkBH5EV0k5oYTzup0dQx1vydJdYrAEf2PIABgwskWdwkopOnqEsHTEW&pro_type=2 HTTP/1.1" 500 18857
+[2020-05-22 17:36:53,596] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 17:36:56,000] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 17:37:18,582] [views.py:257] [views:upload_Cfile] [INFO]- 上传成功！！！
+[2020-05-22 17:37:18,582] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/upload_Cfile/ HTTP/1.1" 200 69
+[2020-05-22 17:37:32,416] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 17:37:43,039] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/ntonflow/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 763, in ntonflow
+    os.rename(os.path.join(path2, 'new_CMNET网工程计算.xls'),os.path.join(path2, 'CMNET网工程计算.xls'))
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。: 'D:\\job\\Relay_forecasting_Tool\\excel\\cmnetwin\\new_CMNET网工程计算.xls' -> 'D:\\job\\Relay_forecasting_Tool\\excel\\cmnetwin\\CMNET网工程计算.xls'
+[2020-05-22 17:37:43,105] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 500 18779
+[2020-05-22 17:43:40,241] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 17:43:43,669] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 17:43:52,141] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 17:44:02,352] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-05-22 17:45:12,595] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/import_excel/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 1672, in import_excel
+    bandwidth_allocation(pro_type, path1, path2)
+  File "D:\job\Relay_forecasting_Tool\apps\utils\daikuanfenpei.py", line 93, in bandwidth_allocation
+    b2 = xlrd.open_workbook(os.path.join(path, 'CMNET网工程计算.xlsx'))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\job\\Relay_forecasting_Tool\\excel\\cmnetwin\\CMNET网工程计算.xlsx'
+[2020-05-22 17:45:12,638] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=rWsudVL2lYWaohcCXui3E2m4TB1DaCUoH3mIjaAiBbk9is49h6qb0xcoR1sfku3M&pro_type=2 HTTP/1.1" 500 18845
+[2020-05-22 17:54:06,931] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 17:54:11,475] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 17:54:25,334] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-05-22 17:55:32,532] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/import_excel/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 1672, in import_excel
+    bandwidth_allocation(pro_type, path1, path2)
+  File "D:\job\Relay_forecasting_Tool\apps\utils\daikuanfenpei.py", line 93, in bandwidth_allocation
+    b2 = xlrd.open_workbook(os.path.join(path, 'CMNET网工程计算.xlsx'))
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\job\\Relay_forecasting_Tool\\excel\\cmnetwin\\CMNET网工程计算.xlsx'
+[2020-05-22 17:55:32,580] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=PBi9UreeU7cBhnm3bVpNBcLkFxA7emsb5Icn0G3uakAAbyeAvxxVXHBEDX1JoeBz&pro_type=2 HTTP/1.1" 500 18845
+[2020-05-22 17:56:30,906] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 17:56:33,669] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 17:57:36,778] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/import_excel/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\book.py", line 474, in sheet_by_name
+    sheetx = self._sheet_names.index(sheet_name)
+ValueError: '点到点流量' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 1672, in import_excel
+    bandwidth_allocation(pro_type, path1, path2)
+  File "D:\job\Relay_forecasting_Tool\apps\utils\daikuanfenpei.py", line 95, in bandwidth_allocation
+    sheet1 = b2.sheet_by_name('点到点流量')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\book.py", line 476, in sheet_by_name
+    raise XLRDError('No sheet named <%r>' % sheet_name)
+xlrd.biffh.XLRDError: No sheet named <'点到点流量'>
+[2020-05-22 17:57:36,810] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=K1miIfTAoEALGQSsT5GjwPre0N1xWNp708gwOuIQERYKA1KZdHOrSkhyYds96Fyv&pro_type=2 HTTP/1.1" 500 18941
+[2020-05-22 18:09:49,290] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 18:09:52,725] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 18:10:06,504] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-05-22 18:11:09,779] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/import_excel/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\book.py", line 474, in sheet_by_name
+    sheetx = self._sheet_names.index(sheet_name)
+ValueError: '点到点流量' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 1672, in import_excel
+    bandwidth_allocation(pro_type, path1, path2)
+  File "D:\job\Relay_forecasting_Tool\apps\utils\daikuanfenpei.py", line 95, in bandwidth_allocation
+    sheet1 = b2.sheet_by_name('点到点流量')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\book.py", line 476, in sheet_by_name
+    raise XLRDError('No sheet named <%r>' % sheet_name)
+xlrd.biffh.XLRDError: No sheet named <'点到点流量'>
+[2020-05-22 18:11:09,810] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=aql5nK0mv8uu1MQEw8ZVhKCjxW3ohhogqxfjtZPCLlStVXIbQK73DfsDvmu0r9xE&pro_type=2 HTTP/1.1" 500 18941
+[2020-05-22 18:20:02,248] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 18:20:02,360] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /static/images/favicon.ico HTTP/1.1" 200 4286
+[2020-05-22 18:20:05,099] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 18:20:18,573] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-05-22 18:30:15,738] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 18:30:20,906] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 18:30:30,080] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 18:30:40,678] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-05-22 18:31:44,813] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/import_excel/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\book.py", line 474, in sheet_by_name
+    sheetx = self._sheet_names.index(sheet_name)
+ValueError: '点到点流量' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 1675, in import_excel
+    bandwidth_allocation(pro_type, path1, path2)
+  File "D:\job\Relay_forecasting_Tool\apps\utils\daikuanfenpei.py", line 95, in bandwidth_allocation
+    sheet1 = b2.sheet_by_name('点到点流量')
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\book.py", line 476, in sheet_by_name
+    raise XLRDError('No sheet named <%r>' % sheet_name)
+xlrd.biffh.XLRDError: No sheet named <'点到点流量'>
+[2020-05-22 18:31:44,850] [basehttp.py:124] [basehttp:log_message] [ERROR]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=2q05IuDaiszSptCwMd5DBjaBWnEpPXxhixUjOJsqyFXRjEu36PdLXO0VUN51ZPGF&pro_type=2 HTTP/1.1" 500 18941
+[2020-05-22 18:47:53,784] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 18:47:58,048] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 18:48:28,546] [views.py:257] [views:upload_Cfile] [INFO]- 上传成功！！！
+[2020-05-22 18:48:28,546] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/upload_Cfile/ HTTP/1.1" 200 69
+[2020-05-22 18:48:42,860] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 18:48:55,812] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-05-22 18:50:16,058] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=bewLpkVSUZj7tQXvtjQljg9T186iifUSrlqZvzK8acH6n1P2NVYtFLZdZyxUs73g&pro_type=2 HTTP/1.1" 200 51
+[2020-05-22 18:51:00,580] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/gz/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 1864, in gz
+    lhx_fn(hx, pro_type)
+  File "D:\job\Relay_forecasting_Tool\apps\utils\fault_polling_min.py", line 44, in lhx_fn
+    sh.write(nodes.index(k) + 1, i, '')
+ValueError: '北京5' is not in list
+[2020-05-22 18:51:00,602] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/gz/ HTTP/1.1" 500 18301
+[2020-05-22 19:05:03,860] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 19:05:07,819] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 19:05:23,929] [views.py:871] [views:up_metric1] [INFO]- list index out of range
+[2020-05-22 19:05:23,929] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 19:05:54,392] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 19:05:57,878] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 19:06:06,578] [views.py:871] [views:up_metric1] [INFO]- list index out of range
+[2020-05-22 19:06:06,578] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 19:11:52,844] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 19:11:56,580] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 19:12:07,503] [views.py:877] [views:up_metric1] [INFO]- list index out of range
+[2020-05-22 19:12:07,503] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 19:56:53,155] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 19:56:56,579] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 19:57:39,705] [views.py:257] [views:upload_Cfile] [INFO]- 上传成功！！！
+[2020-05-22 19:57:39,706] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/upload_Cfile/ HTTP/1.1" 200 69
+[2020-05-22 19:57:52,697] [views.py:877] [views:up_metric1] [INFO]- list index out of range
+[2020-05-22 19:57:52,697] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 19:59:04,854] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 19:59:07,554] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 19:59:16,035] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/up_metric1/ HTTP/1.1" 200 69
+[2020-05-22 19:59:27,715] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/ntonflow/ HTTP/1.1" 200 69
+[2020-05-22 20:00:37,646] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/import_excel/?csrfmiddlewaretoken=NQ49laQetLlf3yc6qzxiwZ0wdMO6aCJw3XYnrpFuJYJeXJ4DKbFqSuQQbcfIkuSU&pro_type=2 HTTP/1.1" 200 51
+[2020-05-22 20:17:26,566] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 20:17:29,340] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 21:07:06,485] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 21:07:13,512] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 21:19:09,390] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /CMNETwinUpload/gz/ HTTP/1.1" 200 51
+[2020-05-22 21:46:10,234] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 11505
+[2020-05-22 21:46:15,023] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET /CMNETwinUpload/CMNETwin/ HTTP/1.1" 200 72816
+[2020-05-22 21:46:21,300] [exception.py:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /CMNETwinUpload/gz/
+Traceback (most recent call last):
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\job\Relay_forecasting_Tool\apps\CMNETwinUpload\views.py", line 1943, in gz
+    StoE = sheet1.cell((j - 1) * num + z, 0).value
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\sheet.py", line 408, in cell
+    xfx = self.cell_xf_index(rowx, colx)
+  File "D:\job\Relay_forecasting_Tool\venv\lib\site-packages\xlrd\sheet.py", line 437, in cell_xf_index
+    xfx = self._cell_xf_indexes[rowx][colx]
+IndexError: list index out of range
+[2020-05-22 21:46:21,333] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /CMNETwinUpload/gz/ HTTP/1.1" 500 18500
