@@ -2,7 +2,7 @@ altgraph==0.16.1
 attrs==19.3.0
 Automat==0.8.0
 beautifulsoup4==4.8.2
-bottle==0.12.18
+bottle==0.12.19
 cffi==1.13.2
 constantly==15.1.0
 cryptography==2.8
